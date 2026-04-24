@@ -1,18 +1,27 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Navbar from "./components/layout/Navbar/index.ts"
+import { routes } from "./routes/routes.ts"
+
+import Home from "./pages/Home"
+import Proyectos from "./pages/Proyectos.tsx"
+import Viajes from "./pages/Viajes.tsx"
+import Ideas from "./pages/Ideas.tsx"
+import Giras from "./pages/Giras.tsx"
+import Grecia2026 from "./pages/giras/2026/Grecia/Grecia.tsx"
+
 function App() {
   return (
-    <main className="min-h-screen bg-stone-50 text-stone-900 flex items-center justify-center">
-      <section className="max-w-xl p-8 text-center">
-        <p className="text-sm uppercase tracking-[0.3em] text-stone-500">
-          Montes Lab
-        </p>
-        <h1 className="mt-4 text-5xl font-semibold">
-          Un lugar para mis ideas, viajes y proyectos.
-        </h1>
-        <p className="mt-6 text-stone-600">
-          Este será mi hub personal para centralizar lo público y lo privado.
-        </p>
-      </section>
-    </main>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path={routes.home} element={<Home />} />
+        <Route path={routes.proyectos} element={<Proyectos />} />
+        <Route path={routes.viajes} element={<Viajes />} />
+        <Route path={routes.ideas} element={<Ideas />} />
+        <Route path={routes.giras} element={<Giras />} />
+        <Route path={routes.grecia2026} element={<Grecia2026 />} />
+      </Routes>
+    </BrowserRouter >
   )
 }
 
