@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom"
 import Navbar from "./components/layout/Navbar/index.ts"
 import { routes } from "./routes/routes.ts"
 
@@ -9,10 +9,13 @@ import Ideas from "./pages/Ideas.tsx"
 import Giras from "./pages/Giras.tsx"
 import Grecia2026 from "./pages/giras/2026/Grecia/Grecia.tsx"
 
-function App() {
+function AppRoutes() {
+  const { pathname } = useLocation()
+  const showNavbar = pathname !== routes.grecia2026
+
   return (
-    <BrowserRouter>
-      <Navbar />
+    <>
+      {showNavbar && <Navbar />}
       <Routes>
         <Route path={routes.home} element={<Home />} />
         <Route path={routes.proyectos} element={<Proyectos />} />
@@ -21,7 +24,15 @@ function App() {
         <Route path={routes.giras} element={<Giras />} />
         <Route path={routes.grecia2026} element={<Grecia2026 />} />
       </Routes>
-    </BrowserRouter >
+    </>
+  )
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
   )
 }
 
