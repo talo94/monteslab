@@ -1,0 +1,34 @@
+/**
+ * Design tokens: paleta compartida (giras, guías de viaje).
+ * Sin sombras ni degradados en el fondo global; separación con bordes solo top/bottom donde aplique.
+ */
+@theme {
+  /* Surfaces & text (monteslab / giras) */
+  --color-ml-bg: #fbf7ef;
+  --color-ml-ink: #382e22;
+  --color-ml-muted: #6b5f54;
+  --color-ml-soft: #968575;
+  --color-ml-accent: #a17145;
+  --color-ml-card: #f3eadc;
+  --color-ml-line: #c9b8a4;
+
+  /* Eurotrip: tonos de apoyo */
+  --color-trip-paper: rgb(255 253 249 / 0.88);
+  --color-trip-ink: #2f2a26;
+  --color-trip-muted: #6c625a;
+  --color-trip-line-soft: rgba(77 63 53 / 0.12);
+  --color-trip-rose: #d9b8b0;
+  --color-trip-gold: #c8a56a;
+  --color-trip-sage: #b8c4b0;
+  --color-trip-blue: #a8bfd1;
+  --color-trip-lav: #c8bfdc;
+}
+
+/* Sans del sistema (sin fuentes web añadidas) — coherente con Grecia y el resto del sitio. */
+.font-family-trip-sans {
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.font-family-trip-serif {
+  font-family: "Source Serif 4", ui-serif, Georgia, serif;
+}
