@@ -5,6 +5,7 @@ import {
     itinerary,
     musicFrames,
     musicians,
+    type SongDetail,
 } from "./data";
 
 export default function GiraGrecia2026() {
@@ -99,9 +100,9 @@ export default function GiraGrecia2026() {
             <PageSection
                 eyebrow="Montaje musical"
                 title="Cuadros confirmados"
-                description="Por ahora hay tres cuadros musicales definidos. La información técnica se puede ir completando a medida que avance la planeación."
+                description="Cuatro cuadros musicales confirmados para la gira, con repertorio y asignación de instrumentos por canción."
             >
-                <div className="grid gap-6 lg:grid-cols-3">
+                <div className="grid gap-6 sm:grid-cols-2">
                     {musicFrames.map((frame) => (
                         <article
                             key={frame.id}
@@ -113,18 +114,19 @@ export default function GiraGrecia2026() {
 
                             <h3 className="mt-3 text-2xl font-medium">{frame.name}</h3>
 
+                            <p className="mt-2 text-sm leading-6 text-[#7b6d60]">
+                                {frame.shortDescription}
+                            </p>
+
                             <ol className="mt-6 list-decimal space-y-2 pl-5 font-['Source_Serif_4',serif] font-light text-[#5d5248]">
-                                {frame.songs.map((song) => {
-                                    const isPendiente = /pendiente/i.test(song);
-                                    return (
-                                        <li
-                                            key={song}
-                                            className={isPendiente ? "italic text-[#a39a8f]" : ""}
-                                        >
-                                            {song}
-                                        </li>
-                                    );
-                                })}
+                                {frame.songs.map((song) => (
+                                    <li key={song.id}>
+                                        {song.name}
+                                        {song.key && (
+                                            <span className="text-[#a17145]"> · {song.key}</span>
+                                        )}
+                                    </li>
+                                ))}
                             </ol>
                         </article>
                     ))}
@@ -134,11 +136,11 @@ export default function GiraGrecia2026() {
             <PageSection
                 eyebrow="Detalle por cuadro"
                 title="Información artística y técnica"
-                description="Cada cuadro tendrá su repertorio, duración máxima, instrumentos, músicos, rider y uniforme correspondiente."
+                description="Selecciona un cuadro para ver la asignación de instrumentos y músicos en cada canción."
             >
                 <div className="grid gap-7">
                     <div
-                        className="mx-auto flex w-full max-w-3xl flex-col gap-2 rounded-2xl bg-[#f3eadc] p-2 sm:flex-row sm:rounded-full"
+                        className="grid w-full grid-cols-2 gap-2 rounded-2xl bg-[#f3eadc] p-2 sm:grid-cols-4"
                         role="tablist"
                         aria-label="Cuadros musicales"
                     >
@@ -149,21 +151,21 @@ export default function GiraGrecia2026() {
                                 role="tab"
                                 aria-selected={activeFrameId === frame.id}
                                 className={[
-                                    "flex-1 rounded-xl px-5 py-3 text-sm font-medium transition sm:rounded-full",
+                                    "w-full rounded-xl px-3 py-3 text-center text-sm font-medium transition sm:rounded-full sm:px-4",
                                     activeFrameId === frame.id
-                                        ? "bg-[#fbf7ef] text-[#382e22]"
+                                        ? "bg-[#fbf7ef] text-[#382e22] shadow-sm"
                                         : "text-[#7b6d60] hover:bg-[#fbf7ef]/60",
                                 ].join(" ")}
                                 onClick={() => setActiveFrameId(frame.id)}
                             >
-                                {frame.name}
+                                {frame.name.replace("Cuadro ", "")}
                             </button>
                         ))}
                     </div>
 
                     {activeFrame && (
                         <article className="rounded-[2rem] bg-[#f3eadc] p-6 sm:p-8">
-                            <div className="mb-8 flex flex-col justify-between gap-4 sm:flex-row sm:items-start">
+                            <div className="mb-8 flex flex-col justify-between gap-4 border-b border-[#e0d4c4] pb-8 sm:flex-row sm:items-start">
                                 <div>
                                     <p className="mb-3 text-xs font-medium uppercase tracking-[0.24em] text-[#a17145]">
                                         Cuadro musical
@@ -172,37 +174,31 @@ export default function GiraGrecia2026() {
                                     <h3 className="text-3xl font-['Source_Serif_4',serif] font-light tracking-[-0.03em] sm:text-4xl">
                                         {activeFrame.name}
                                     </h3>
+
+                                    <p className="mt-3 max-w-2xl text-[#6b5f54]">
+                                        {activeFrame.shortDescription}
+                                    </p>
                                 </div>
 
-                                <span className="text-base font-['Source_Serif_4',serif] font-light italic text-[#a17145]">
+                                <span className="shrink-0 text-base font-['Source_Serif_4',serif] font-light italic text-[#a17145]">
                                     {activeFrame.songs.length} canciones
                                 </span>
                             </div>
 
-                            <div className="grid gap-4 md:grid-cols-2">
-                                <DetailBlock title="Listado de canciones" className="md:col-span-2">
-                                    <ol className="list-decimal space-y-2 pl-5">
-                                        {activeFrame.songs.map((song) => (
-                                            <li key={song}>{song}</li>
-                                        ))}
-                                    </ol>
-                                </DetailBlock>
+                            <div className="grid gap-5">
+                                {activeFrame.songs.map((song, index) => (
+                                    <SongCard key={song.id} index={index + 1} song={song} />
+                                ))}
+                            </div>
 
+                            <div className="mt-8 grid gap-4 border-t border-[#e0d4c4] pt-8 md:grid-cols-3">
                                 <DetailBlock title="Duración máxima">
                                     {activeFrame.maxDuration}
                                 </DetailBlock>
 
                                 <DetailBlock title="Uniforme">{activeFrame.uniform}</DetailBlock>
 
-                                <DetailBlock title="Instrumentos del cuadro" className="md:col-span-2">
-                                    Pendiente por definir.
-                                </DetailBlock>
-
-                                <DetailBlock title="Músicos del cuadro" className="md:col-span-2">
-                                    Pendiente por definir.
-                                </DetailBlock>
-
-                                <DetailBlock title="Rider técnico" className="md:col-span-2">
+                                <DetailBlock title="Rider técnico">
                                     {activeFrame.rider}
                                 </DetailBlock>
                             </div>
@@ -256,7 +252,7 @@ export default function GiraGrecia2026() {
 
                                 <div>
                                     <h3 className="font-medium">{musician.name}</h3>
-                                    <p className="mt-1 text-sm text-[#7b6d60]">{musician.role}</p>
+                                    <p className="mt-1 text-sm text-[#7b6d60]">{musician.instruments}</p>
                                 </div>
                             </article>
                         ))}
@@ -325,7 +321,7 @@ type DetailBlockProps = {
 function DetailBlock({ title, children, className = "" }: DetailBlockProps) {
     const isPendientePorDefinir =
         (typeof children === "string" || typeof children === "number") &&
-        /pendiente\s+por\s+definir/i.test(String(children).trim());
+        /pendiente\s+por\s+definir|por\s+definir/i.test(String(children).trim());
 
     return (
         <div
@@ -340,6 +336,69 @@ function DetailBlock({ title, children, className = "" }: DetailBlockProps) {
 
             <div className={["leading-7", isPendientePorDefinir && "italic"].filter(Boolean).join(" ")}>
                 {children}
+            </div>
+        </div>
+    );
+}
+
+type SongCardProps = {
+    index: number
+    song: SongDetail
+}
+
+function SongCard({ index, song }: SongCardProps) {
+    return (
+        <div className="overflow-hidden rounded-[1.5rem] bg-[#fbf7ef]">
+            <div className="flex flex-col gap-2 border-b border-[#e8dfd3] px-5 py-4 sm:flex-row sm:items-baseline sm:justify-between sm:px-6">
+                <div className="flex items-baseline gap-3">
+                    <span className="font-['Source_Serif_4',serif] text-lg font-light italic text-[#a17145]">
+                        {String(index).padStart(2, "0")}
+                    </span>
+                    <h4 className="text-xl font-medium text-[#382e22]">{song.name}</h4>
+                </div>
+
+                {song.key && (
+                    <span className="pl-9 text-sm font-['Source_Serif_4',serif] font-light italic text-[#7b6d60] sm:pl-0">
+                        {song.key}
+                    </span>
+                )}
+            </div>
+
+            <div className="overflow-x-auto">
+                <table className="w-full min-w-[320px] text-left text-sm">
+                    <thead>
+                        <tr className="border-b border-[#e8dfd3] text-xs font-medium uppercase tracking-[0.14em] text-[#a17145]">
+                            <th className="px-5 py-3 font-medium sm:px-6">Instrumento / rol</th>
+                            <th className="px-5 py-3 font-medium sm:px-6">Músico</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {song.assignments.map((assignment, assignmentIndex) => {
+                            const isPorDefinir = /por\s+definir/i.test(assignment.musician);
+
+                            return (
+                                <tr
+                                    key={`${assignment.role}-${assignmentIndex}`}
+                                    className="border-b border-[#f0e8dc] last:border-b-0"
+                                >
+                                    <td className="px-5 py-3 text-[#5d5248] sm:px-6">
+                                        {assignment.role}
+                                    </td>
+                                    <td
+                                        className={[
+                                            "px-5 py-3 font-medium sm:px-6",
+                                            isPorDefinir
+                                                ? "font-['Source_Serif_4',serif] font-light italic text-[#a39a8f]"
+                                                : "text-[#382e22]",
+                                        ].join(" ")}
+                                    >
+                                        {assignment.musician}
+                                    </td>
+                                </tr>
+                            );
+                        })}
+                    </tbody>
+                </table>
             </div>
         </div>
     );
