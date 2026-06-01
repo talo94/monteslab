@@ -65,58 +65,296 @@ export const itinerary = [
   },
 ]
 
-export const musicFrames = [
+export type SongAssignment = {
+  role: string
+  musician: string
+}
+
+export type SongDetail = {
+  id: string
+  name: string
+  key?: string
+  assignments: SongAssignment[]
+}
+
+export type MusicFrame = {
+  id: string
+  name: string
+  shortDescription: string
+  maxDuration: string
+  uniform: string
+  rider: string
+  songs: SongDetail[]
+}
+
+export const musicFrames: MusicFrame[] = [
   {
-    id: "andino",
-    name: "Cuadro Andino",
-    shortDescription: "Repertorio de raíz andina colombiana.",
+    id: "tolima",
+    name: "Cuadro Andino 1 Tolima",
+    shortDescription: "Repertorio de raíz andina colombiana — región del Tolima.",
     maxDuration: "Pendiente por definir",
     uniform: "Pendiente por definir",
     rider: "Pendiente por definir",
     songs: [
-      "Para desenguayabar",
-      "Ojo al toro",
-      "Buscarruidos",
-      "Garzón, yo soy de ti",
-      "San Pedro en el Espinal",
+      {
+        id: "busca-ruidos",
+        name: "Busca Ruidos",
+        key: "G / Gm",
+        assignments: [
+          { role: "Guitarra", musician: "Cristian" },
+          { role: "Tambora", musician: "Sebastian" },
+          { role: "Bajo", musician: "Por definir" },
+          { role: "Percusión menor", musician: "Talo" },
+          { role: "Clarinete", musician: "Jose Luis" },
+          { role: "Tiple", musician: "Orlando" },
+        ],
+      },
+      {
+        id: "ojo-al-toro",
+        name: "Ojo al Toro",
+        key: "Dm",
+        assignments: [
+          { role: "Guitarra", musician: "Cristian" },
+          { role: "Tambora", musician: "Sebastian" },
+          { role: "Bajo", musician: "Por definir" },
+          { role: "Percusión menor", musician: "Talo" },
+          { role: "Clarinete", musician: "Jose Luis" },
+          { role: "Tiple", musician: "Orlando" },
+        ],
+      },
+      {
+        id: "como-para-desenguayabar",
+        name: "Como para desenguayabar",
+        assignments: [
+          { role: "Guitarra", musician: "Cristian" },
+          { role: "Tambora", musician: "Sebastian" },
+          { role: "Bajo", musician: "Por definir" },
+          { role: "Percusión menor", musician: "Melissa" },
+          { role: "Clarinete", musician: "Jose Luis" },
+          { role: "Tiple", musician: "Orlando" },
+        ],
+      },
+      {
+        id: "san-pedro-espinal",
+        name: "San Pedro en el Espinal",
+        key: "Gm",
+        assignments: [
+          { role: "Guitarra", musician: "Cristian" },
+          { role: "Tambora", musician: "Sebastian" },
+          { role: "Bajo", musician: "Por definir" },
+          { role: "Percusión menor", musician: "Talo" },
+          { role: "Clarinete", musician: "Jose Luis" },
+          { role: "Tiple", musician: "Orlando" },
+        ],
+      },
+      {
+        id: "garzon-yo-soy-de-ti",
+        name: "Garzón, yo soy de ti",
+        key: "Am",
+        assignments: [
+          { role: "Guitarra", musician: "Cristian" },
+          { role: "Tambora", musician: "Sebastian" },
+          { role: "Bajo", musician: "Por definir" },
+          { role: "Percusión menor", musician: "Talo" },
+          { role: "Clarinete", musician: "Jose Luis" },
+          { role: "Tiple", musician: "Orlando" },
+        ],
+      },
     ],
-    instruments: [],
-    musicians: [],
   },
   {
     id: "antioquia",
-    name: "Cuadro Antioquia",
-    shortDescription:
-      "Repertorio inspirado en músicas tradicionales antioqueñas.",
+    name: "Cuadro Andino 2 Antioquia",
+    shortDescription: "Repertorio inspirado en músicas tradicionales antioqueñas.",
     maxDuration: "Pendiente por definir",
     uniform: "Pendiente por definir",
     rider: "Pendiente por definir",
     songs: [
-      "Porro antioqueño",
-      "Parranda antioqueña",
-      "Baile bravo",
-      "Carrataplan",
-      "Pasillo boliao",
+      {
+        id: "conjuro",
+        name: "Conjuro",
+        key: "Am",
+        assignments: [
+          { role: "Voz", musician: "Orlando" },
+          { role: "Tambora", musician: "Sebastian" },
+          { role: "Bajo", musician: "Por definir" },
+          { role: "Percusión menor", musician: "Jose Luis" },
+          { role: "Percusión menor", musician: "Talo" },
+          { role: "Tiple", musician: "Orlando" },
+        ],
+      },
+      {
+        id: "kikiriqui",
+        name: "El Kikiriquí",
+        key: "Gm",
+        assignments: [
+          { role: "Voz", musician: "Orlando" },
+          { role: "Tambora", musician: "Sebastian" },
+          { role: "Bajo", musician: "Por definir" },
+          { role: "Percusión menor", musician: "Jose Luis" },
+          { role: "Percusión menor", musician: "Talo" },
+          { role: "Tiple", musician: "Orlando" },
+        ],
+      },
+      {
+        id: "negro-picante",
+        name: "Negro Picante",
+        key: "Am",
+        assignments: [
+          { role: "Voz", musician: "Orlando" },
+          { role: "Tambora", musician: "Sebastian" },
+          { role: "Bajo", musician: "Por definir" },
+          { role: "Percusión menor", musician: "Jose Luis" },
+          { role: "Percusión menor", musician: "Talo" },
+          { role: "Tiple", musician: "Orlando" },
+        ],
+      },
+      {
+        id: "carrataplan",
+        name: "Carrataplan",
+        key: "Em",
+        assignments: [
+          { role: "Voz", musician: "Orlando" },
+          { role: "Tambora", musician: "Sebastian" },
+          { role: "Bajo", musician: "Por definir" },
+          { role: "Percusión menor", musician: "Jose Luis" },
+          { role: "Percusión menor", musician: "Talo" },
+          { role: "Tiple", musician: "Orlando" },
+        ],
+      },
+      {
+        id: "pasillo-voliao",
+        name: "Pasillo Voliao",
+        key: "Am",
+        assignments: [
+          { role: "Voz", musician: "Por definir" },
+          { role: "Tambora", musician: "Sebastian" },
+          { role: "Bajo", musician: "Por definir" },
+          { role: "Clarinete", musician: "Jose Luis" },
+          { role: "Percusión menor", musician: "Talo" },
+          { role: "Tiple", musician: "Orlando" },
+        ],
+      },
     ],
-    instruments: [],
-    musicians: [],
   },
   {
-    id: "caribe",
-    name: "Cuadro Caribe",
+    id: "costa-atlantica",
+    name: "Cuadro Costa Atlántica",
     shortDescription: "Repertorio con sonoridades del Caribe colombiano.",
     maxDuration: "Pendiente por definir",
     uniform: "Pendiente por definir",
     rider: "Pendiente por definir",
     songs: [
-      "Cumbia juliana",
-      "Bullerengue — pendiente",
-      "Pescador",
-      "La bruja",
-      "Puya — pendiente",
+      {
+        id: "mata-de-azar",
+        name: "Mata de Azar de la India",
+        key: "Bullerengue",
+        assignments: [
+          { role: "Voz", musician: "Talo" },
+          { role: "Tambora", musician: "Sebastian" },
+          { role: "Alegre", musician: "Por definir" },
+          { role: "Llamador", musician: "Orlando" },
+          { role: "Percusión menor (Coros)", musician: "Jose Luis" },
+          { role: "Percusión menor (Coros)", musician: "Cristian" },
+        ],
+      },
+      {
+        id: "solo-cumbia-hombres",
+        name: "Solo Cumbia de Hombres",
+        assignments: [
+          { role: "Voz", musician: "Talo" },
+          { role: "Tambora", musician: "Sebastian" },
+          { role: "Alegre", musician: "Por definir" },
+          { role: "Llamador", musician: "Orlando" },
+          { role: "Percusión menor (Coros)", musician: "Jose Luis" },
+          { role: "Percusión menor (Coros)", musician: "Cristian" },
+        ],
+      },
+      {
+        id: "juliana",
+        name: "Juliana",
+        key: "Cumbia",
+        assignments: [
+          { role: "Voz", musician: "Talo" },
+          { role: "Tambora", musician: "Sebastian" },
+          { role: "Alegre", musician: "Por definir" },
+          { role: "Llamador", musician: "Orlando" },
+          { role: "Clarinete", musician: "Jose Luis" },
+          { role: "Percusión menor (Coros)", musician: "Cristian" },
+        ],
+      },
+      {
+        id: "la-bruja",
+        name: "La Bruja",
+        assignments: [
+          { role: "Voz", musician: "Talo" },
+          { role: "Tambora", musician: "Sebastian" },
+          { role: "Alegre", musician: "Por definir" },
+          { role: "Llamador", musician: "Orlando" },
+          { role: "Percusión menor (Coros)", musician: "Jose Luis" },
+          { role: "Percusión menor (Coros)", musician: "Cristian" },
+        ],
+      },
+      {
+        id: "mapale",
+        name: "Mapalé",
+        key: "Espíritu del agua · Vamos a bailar un mapalé · Prende la vela",
+        assignments: [
+          { role: "Voz", musician: "Talo" },
+          { role: "Tambora", musician: "Sebastian" },
+          { role: "Alegre", musician: "Por definir" },
+          { role: "Llamador", musician: "Orlando" },
+          { role: "Clarinete", musician: "Jose Luis" },
+          { role: "Percusión menor (Coros)", musician: "Cristian" },
+        ],
+      },
     ],
-    instruments: [],
-    musicians: [],
+  },
+  {
+    id: "costa-pacifica",
+    name: "Cuadro Costa Pacífica",
+    shortDescription: "Repertorio con ritmos y sonoridades del Pacífico colombiano.",
+    maxDuration: "Pendiente por definir",
+    uniform: "Pendiente por definir",
+    rider: "Pendiente por definir",
+    songs: [
+      {
+        id: "el-birimbi",
+        name: "El Birimbi",
+        assignments: [
+          { role: "Voz", musician: "Talo" },
+          { role: "Tambora", musician: "Sebastian" },
+          { role: "Redoblante", musician: "Por definir" },
+          { role: "Platillos", musician: "Orlando" },
+          { role: "Clarinete", musician: "Jose Luis" },
+          { role: "Percusión menor", musician: "Cristian" },
+        ],
+      },
+      {
+        id: "manteca-de-iguana",
+        name: "Manteca de Iguana",
+        assignments: [
+          { role: "Voz", musician: "Talo" },
+          { role: "Tambora", musician: "Sebastian" },
+          { role: "Redoblante", musician: "Por definir" },
+          { role: "Platillos", musician: "Orlando" },
+          { role: "Clarinete", musician: "Jose Luis" },
+          { role: "Percusión menor", musician: "Cristian" },
+        ],
+      },
+      {
+        id: "tazquero",
+        name: "Tazquero",
+        assignments: [
+          { role: "Voz", musician: "Talo" },
+          { role: "Tambora", musician: "Sebastian" },
+          { role: "Alegre", musician: "Por definir" },
+          { role: "Percusión menor", musician: "Orlando" },
+          { role: "Percusión menor", musician: "Jose Luis" },
+          { role: "Percusión menor", musician: "Cristian" },
+        ],
+      },
+    ],
   },
 ]
 
@@ -125,39 +363,39 @@ export const instruments = [
   "Llamador",
   "Clarinete",
   "Alegre",
-  "Maracas",
+  "Redoblante",
+  "Platillos",
+  "Bajo",
   "Guitarra",
+  "Tiple",
+  "Percusión menor",
+  "Maracas",
 ]
 
 export const musicians = [
   {
     name: "Talo, Natalia Montes",
-    role: "Cantante",
+    instruments: "Voz y percusión menor",
     initials: "TA",
   },
   {
     name: "Cristian Velandia",
-    role: "Músico",
+    instruments: "Guitarra y percusión menor",
     initials: "CV",
   },
   {
-    name: "Andrés Ávila",
-    role: "Director musical",
-    initials: "AA",
-  },
-  {
     name: "Jose Luis Rodriguez",
-    role: "Músico",
+    instruments: "Clarinete y percusión menor",
     initials: "JR",
   },
   {
     name: "Sebastian Rodríguez",
-    role: "Músico",
+    instruments: "Tambora",
     initials: "SR",
   },
   {
     name: "Por confirmar",
-    role: "Músico",
+    instruments: "Bajo, alegre y redoblante",
     initials: "—",
   },
 ]
