@@ -1,3 +1,5 @@
+import { songLyrics } from "./lyrics"
+
 export const giraInfo = {
   title: "Grecia 2026",
   subtitle: "Agrupación Iramawi",
@@ -75,6 +77,7 @@ export type SongDetail = {
   name: string
   key?: string
   assignments: SongAssignment[]
+  lyrics?: string
 }
 
 export type MusicFrame = {
@@ -100,6 +103,7 @@ export const musicFrames: MusicFrame[] = [
         id: "busca-ruidos",
         name: "Busca Ruidos",
         key: "G / Gm",
+        lyrics: songLyrics["busca-ruidos"],
         assignments: [
           { role: "Guitarra", musician: "Cristian" },
           { role: "Tambora", musician: "Sebastian" },
@@ -113,6 +117,7 @@ export const musicFrames: MusicFrame[] = [
         id: "ojo-al-toro",
         name: "Ojo al Toro",
         key: "Dm",
+        lyrics: songLyrics["ojo-al-toro"],
         assignments: [
           { role: "Guitarra", musician: "Cristian" },
           { role: "Tambora", musician: "Sebastian" },
@@ -151,6 +156,7 @@ export const musicFrames: MusicFrame[] = [
         id: "garzon-yo-soy-de-ti",
         name: "Garzón, yo soy de ti",
         key: "Am",
+        lyrics: songLyrics["garzon-yo-soy-de-ti"],
         assignments: [
           { role: "Guitarra", musician: "Cristian" },
           { role: "Tambora", musician: "Sebastian" },
@@ -174,6 +180,7 @@ export const musicFrames: MusicFrame[] = [
         id: "conjuro",
         name: "Conjuro",
         key: "Am",
+        lyrics: songLyrics.conjuro,
         assignments: [
           { role: "Voz", musician: "Orlando" },
           { role: "Tambora", musician: "Sebastian" },
@@ -187,6 +194,7 @@ export const musicFrames: MusicFrame[] = [
         id: "kikiriqui",
         name: "El Kikiriquí",
         key: "Gm",
+        lyrics: songLyrics.kikiriqui,
         assignments: [
           { role: "Voz", musician: "Orlando" },
           { role: "Tambora", musician: "Sebastian" },
@@ -200,6 +208,7 @@ export const musicFrames: MusicFrame[] = [
         id: "negro-picante",
         name: "Negro Picante",
         key: "Am",
+        lyrics: songLyrics["negro-picante"],
         assignments: [
           { role: "Voz", musician: "Orlando" },
           { role: "Tambora", musician: "Sebastian" },
@@ -213,6 +222,7 @@ export const musicFrames: MusicFrame[] = [
         id: "carrataplan",
         name: "Carrataplan",
         key: "Em",
+        lyrics: songLyrics.carrataplan,
         assignments: [
           { role: "Voz", musician: "Orlando" },
           { role: "Tambora", musician: "Sebastian" },
@@ -249,6 +259,7 @@ export const musicFrames: MusicFrame[] = [
         id: "mata-de-azar",
         name: "Mata de Azar de la India",
         key: "Bullerengue",
+        lyrics: songLyrics["mata-de-azar"],
         assignments: [
           { role: "Voz", musician: "Talo" },
           { role: "Tambora", musician: "Sebastian" },
@@ -260,7 +271,9 @@ export const musicFrames: MusicFrame[] = [
       },
       {
         id: "solo-cumbia-hombres",
-        name: "Solo Cumbia de Hombres",
+        name: "El Pescador — Totó la Momposina",
+        key: "Solo cumbia de hombres",
+        lyrics: songLyrics["solo-cumbia-hombres"],
         assignments: [
           { role: "Voz", musician: "Talo" },
           { role: "Tambora", musician: "Sebastian" },
@@ -274,6 +287,7 @@ export const musicFrames: MusicFrame[] = [
         id: "juliana",
         name: "Juliana",
         key: "Cumbia",
+        lyrics: songLyrics.juliana,
         assignments: [
           { role: "Voz", musician: "Talo" },
           { role: "Tambora", musician: "Sebastian" },
@@ -286,6 +300,7 @@ export const musicFrames: MusicFrame[] = [
       {
         id: "la-bruja",
         name: "La Bruja",
+        lyrics: songLyrics["la-bruja"],
         assignments: [
           { role: "Voz", musician: "Talo" },
           { role: "Tambora", musician: "Sebastian" },
@@ -299,6 +314,7 @@ export const musicFrames: MusicFrame[] = [
         id: "mapale",
         name: "Mapalé",
         key: "Espíritu del agua · Vamos a bailar un mapalé · Prende la vela",
+        lyrics: songLyrics.mapale,
         assignments: [
           { role: "Voz", musician: "Talo" },
           { role: "Tambora", musician: "Sebastian" },
@@ -321,6 +337,7 @@ export const musicFrames: MusicFrame[] = [
       {
         id: "el-birimbi",
         name: "El Birimbi",
+        lyrics: songLyrics["el-birimbi"],
         assignments: [
           { role: "Voz", musician: "Talo" },
           { role: "Tambora", musician: "Sebastian" },
@@ -333,6 +350,7 @@ export const musicFrames: MusicFrame[] = [
       {
         id: "manteca-de-iguana",
         name: "Manteca de Iguana",
+        lyrics: songLyrics["manteca-de-iguana"],
         assignments: [
           { role: "Voz", musician: "Talo" },
           { role: "Tambora", musician: "Sebastian" },
@@ -392,6 +410,11 @@ export const musicians = [
     name: "Sebastian Rodríguez",
     instruments: "Tambora",
     initials: "SR",
+  },
+  {
+    name: "Orlando",
+    instruments: "Voz, tiple, llamador, platillos y percusión menor",
+    initials: "OR",
   },
   {
     name: "Por confirmar",

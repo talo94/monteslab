@@ -1,4 +1,7 @@
-import { useMemo, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
+import { Link } from "react-router-dom";
+import { routes } from "../../../../routes/routes";
+import { FormattedLyrics } from "./formatLyrics";
 import {
     giraInfo,
     instruments,
@@ -10,11 +13,23 @@ import {
 
 export default function GiraGrecia2026() {
     const [activeFrameId, setActiveFrameId] = useState(musicFrames[0].id);
+    const [activeSongId, setActiveSongId] = useState(musicFrames[0].songs[0].id);
 
     const activeFrame = useMemo(
         () => musicFrames.find((frame) => frame.id === activeFrameId),
         [activeFrameId],
     );
+
+    const activeSong = useMemo(
+        () => activeFrame?.songs.find((song) => song.id === activeSongId),
+        [activeFrame, activeSongId],
+    );
+
+    useEffect(() => {
+        if (activeFrame) {
+            setActiveSongId(activeFrame.songs[0].id);
+        }
+    }, [activeFrameId, activeFrame]);
 
     return (
         <main className="min-h-screen bg-[#fbf7ef] px-5 py-10 text-[#382e22] sm:px-6 lg:px-8">
@@ -35,6 +50,16 @@ export default function GiraGrecia2026() {
                     <HeroMeta label="Destino" value={giraInfo.location} />
                     <HeroMeta label="Llegada" value="Atenas · 24 junio" />
                     <HeroMeta label="Duración" value="15 días" />
+                </div>
+
+                <div className="mt-10">
+                    <Link
+                        to={routes.grecia2026Letras}
+                        className="inline-flex items-center gap-2 rounded-full bg-[#382e22] px-6 py-3 text-sm font-medium text-[#fbf7ef] transition hover:bg-[#4a3d30]"
+                    >
+                        Ver letras para presentación
+                        <span aria-hidden="true">→</span>
+                    </Link>
                 </div>
             </section>
 
@@ -191,6 +216,13 @@ export default function GiraGrecia2026() {
                                 ))}
                             </div>
 
+                            <FrameLyricsSection
+                                songs={activeFrame.songs}
+                                activeSongId={activeSongId}
+                                activeSong={activeSong}
+                                onSelectSong={setActiveSongId}
+                            />
+
                             <div className="mt-8 grid gap-4 border-t border-[#e0d4c4] pt-8 md:grid-cols-3">
                                 <DetailBlock title="Duración máxima">
                                     {activeFrame.maxDuration}
@@ -225,10 +257,6 @@ export default function GiraGrecia2026() {
                                 {instrument}
                             </span>
                         ))}
-
-                        <span className="rounded-full bg-[#f3eadc] px-4 py-2 text-sm font-medium italic text-[#a17145]">
-                            + pendientes por agregar
-                        </span>
                     </div>
                 </div>
 
@@ -400,6 +428,85 @@ function SongCard({ index, song }: SongCardProps) {
                     </tbody>
                 </table>
             </div>
+        </div>
+    );
+}
+
+type FrameLyricsSectionProps = {
+    songs: SongDetail[]
+    activeSongId: string
+    activeSong: SongDetail | undefined
+    onSelectSong: (songId: string) => void
+}
+
+function FrameLyricsSection({
+    songs,
+    activeSongId,
+    activeSong,
+    onSelectSong,
+}: FrameLyricsSectionProps) {
+    return (
+        <div className="mt-8 border-t border-[#e0d4c4] pt-8">
+            <div className="mb-5">
+                <p className="text-xs font-medium uppercase tracking-[0.24em] text-[#a17145]">
+                    Letras
+                </p>
+                <h4 className="mt-2 text-xl font-medium text-[#382e22]">
+                    Repertorio del cuadro
+                </h4>
+            </div>
+
+            <div
+                className="flex w-full flex-wrap gap-2 rounded-2xl bg-[#fbf7ef] p-2"
+                role="tablist"
+                aria-label="Letras por canción"
+            >
+                {songs.map((song) => (
+                    <button
+                        key={song.id}
+                        type="button"
+                        role="tab"
+                        aria-selected={activeSongId === song.id}
+                        title={song.name}
+                        className={[
+                            "min-w-[calc(50%-0.25rem)] flex-1 rounded-xl px-3 py-3 text-center text-sm font-medium transition sm:min-w-[8rem] sm:rounded-full sm:px-4",
+                            activeSongId === song.id
+                                ? "bg-[#f3eadc] text-[#382e22] shadow-sm"
+                                : "text-[#7b6d60] hover:bg-[#f3eadc]/60",
+                            !song.lyrics && activeSongId !== song.id && "opacity-70",
+                        ].join(" ")}
+                        onClick={() => onSelectSong(song.id)}
+                    >
+                        {song.name}
+                    </button>
+                ))}
+            </div>
+
+            {activeSong && (
+                <div
+                    role="tabpanel"
+                    className="mt-5 overflow-hidden rounded-[1.5rem] bg-[#fbf7ef] p-6 sm:p-8"
+                >
+                    <div className="mb-6 border-b border-[#e8dfd3] pb-5">
+                        <h5 className="font-['Source_Serif_4',serif] text-2xl font-light text-[#382e22] sm:text-3xl">
+                            {activeSong.name}
+                        </h5>
+                        {activeSong.key && (
+                            <p className="mt-2 text-sm font-['Source_Serif_4',serif] font-light italic text-[#a17145]">
+                                {activeSong.key}
+                            </p>
+                        )}
+                    </div>
+
+                    {activeSong.lyrics ? (
+                        <FormattedLyrics text={activeSong.lyrics} />
+                    ) : (
+                        <p className="text-sm leading-7 italic text-[#a39a8f]">
+                            Letra pendiente por agregar.
+                        </p>
+                    )}
+                </div>
+            )}
         </div>
     );
 }
