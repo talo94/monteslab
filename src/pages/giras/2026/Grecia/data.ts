@@ -94,7 +94,8 @@ export const musicFrames: MusicFrame[] = [
   {
     id: "tolima",
     name: "Cuadro Andino 1 Tolima",
-    shortDescription: "Repertorio de raíz andina colombiana — región del Tolima.",
+    shortDescription:
+      "Repertorio de raíz andina colombiana — región del Tolima.",
     maxDuration: "Pendiente por definir",
     uniform: "Pendiente por definir",
     rider: "Pendiente por definir",
@@ -106,8 +107,8 @@ export const musicFrames: MusicFrame[] = [
         lyrics: songLyrics["busca-ruidos"],
         assignments: [
           { role: "Guitarra", musician: "Cristian" },
-          { role: "Tambora", musician: "Sebastian" },
-          { role: "Bajo", musician: "Por definir" },
+          { role: "Tambora", musician: "Javier" },
+          { role: "Bajo", musician: "Sebastian" },
           { role: "Percusión menor", musician: "Talo" },
           { role: "Clarinete", musician: "Jose Luis" },
           { role: "Tiple", musician: "Orlando" },
@@ -120,8 +121,8 @@ export const musicFrames: MusicFrame[] = [
         lyrics: songLyrics["ojo-al-toro"],
         assignments: [
           { role: "Guitarra", musician: "Cristian" },
-          { role: "Tambora", musician: "Sebastian" },
-          { role: "Bajo", musician: "Por definir" },
+          { role: "Tambora", musician: "Javier" },
+          { role: "Bajo", musician: "Sebastian" },
           { role: "Percusión menor", musician: "Talo" },
           { role: "Clarinete", musician: "Jose Luis" },
           { role: "Tiple", musician: "Orlando" },
@@ -132,9 +133,9 @@ export const musicFrames: MusicFrame[] = [
         name: "Como para desenguayabar",
         assignments: [
           { role: "Guitarra", musician: "Cristian" },
-          { role: "Tambora", musician: "Sebastian" },
-          { role: "Bajo", musician: "Por definir" },
-          { role: "Percusión menor", musician: "Melissa" },
+          { role: "Tambora", musician: "Javier" },
+          { role: "Bajo", musician: "Sebastian" },
+          { role: "Percusión menor", musician: "Talo" },
           { role: "Clarinete", musician: "Jose Luis" },
           { role: "Tiple", musician: "Orlando" },
         ],
@@ -145,8 +146,8 @@ export const musicFrames: MusicFrame[] = [
         key: "Gm",
         assignments: [
           { role: "Guitarra", musician: "Cristian" },
-          { role: "Tambora", musician: "Sebastian" },
-          { role: "Bajo", musician: "Por definir" },
+          { role: "Tambora", musician: "Javier" },
+          { role: "Bajo", musician: "Sebastian" },
           { role: "Percusión menor", musician: "Talo" },
           { role: "Clarinete", musician: "Jose Luis" },
           { role: "Tiple", musician: "Orlando" },
@@ -159,8 +160,8 @@ export const musicFrames: MusicFrame[] = [
         lyrics: songLyrics["garzon-yo-soy-de-ti"],
         assignments: [
           { role: "Guitarra", musician: "Cristian" },
-          { role: "Tambora", musician: "Sebastian" },
-          { role: "Bajo", musician: "Por definir" },
+          { role: "Tambora", musician: "Javier" },
+          { role: "Bajo", musician: "Sebastian" },
           { role: "Percusión menor", musician: "Talo" },
           { role: "Clarinete", musician: "Jose Luis" },
           { role: "Tiple", musician: "Orlando" },
@@ -171,7 +172,8 @@ export const musicFrames: MusicFrame[] = [
   {
     id: "antioquia",
     name: "Cuadro Andino 2 Antioquia",
-    shortDescription: "Repertorio inspirado en músicas tradicionales antioqueñas.",
+    shortDescription:
+      "Repertorio inspirado en músicas tradicionales antioqueñas.",
     maxDuration: "Pendiente por definir",
     uniform: "Pendiente por definir",
     rider: "Pendiente por definir",
@@ -184,22 +186,8 @@ export const musicFrames: MusicFrame[] = [
         assignments: [
           { role: "Voz", musician: "Orlando" },
           { role: "Tambora", musician: "Sebastian" },
-          { role: "Bajo", musician: "Por definir" },
-          { role: "Percusión menor", musician: "Jose Luis" },
-          { role: "Percusión menor", musician: "Talo" },
-          { role: "Tiple", musician: "Orlando" },
-        ],
-      },
-      {
-        id: "kikiriqui",
-        name: "El Kikiriquí",
-        key: "Gm",
-        lyrics: songLyrics.kikiriqui,
-        assignments: [
-          { role: "Voz", musician: "Orlando" },
-          { role: "Tambora", musician: "Sebastian" },
-          { role: "Bajo", musician: "Por definir" },
-          { role: "Percusión menor", musician: "Jose Luis" },
+          { role: "Bajo", musician: "Josec Luis" },
+          { role: "Percusión menor", musician: "Javier" },
           { role: "Percusión menor", musician: "Talo" },
           { role: "Tiple", musician: "Orlando" },
         ],
@@ -212,8 +200,22 @@ export const musicFrames: MusicFrame[] = [
         assignments: [
           { role: "Voz", musician: "Orlando" },
           { role: "Tambora", musician: "Sebastian" },
-          { role: "Bajo", musician: "Por definir" },
-          { role: "Percusión menor", musician: "Jose Luis" },
+          { role: "Bajo", musician: "Josec Luis" },
+          { role: "Percusión menor", musician: "Javier" },
+          { role: "Percusión menor", musician: "Talo" },
+          { role: "Tiple", musician: "Orlando" },
+        ],
+      },
+      {
+        id: "kikiriqui",
+        name: "El Kikiriquí",
+        key: "Gm",
+        lyrics: songLyrics.kikiriqui,
+        assignments: [
+          { role: "Voz", musician: "Orlando" },
+          { role: "Tambora", musician: "Sebastian" },
+          { role: "Bajo", musician: "Josec Luis" },
+          { role: "Percusión menor", musician: "Javier" },
           { role: "Percusión menor", musician: "Talo" },
           { role: "Tiple", musician: "Orlando" },
         ],
@@ -226,21 +228,8 @@ export const musicFrames: MusicFrame[] = [
         assignments: [
           { role: "Voz", musician: "Orlando" },
           { role: "Tambora", musician: "Sebastian" },
-          { role: "Bajo", musician: "Por definir" },
-          { role: "Percusión menor", musician: "Jose Luis" },
-          { role: "Percusión menor", musician: "Talo" },
-          { role: "Tiple", musician: "Orlando" },
-        ],
-      },
-      {
-        id: "pasillo-voliao",
-        name: "Pasillo Voliao",
-        key: "Am",
-        assignments: [
-          { role: "Voz", musician: "Por definir" },
-          { role: "Tambora", musician: "Sebastian" },
-          { role: "Bajo", musician: "Por definir" },
-          { role: "Clarinete", musician: "Jose Luis" },
+          { role: "Bajo", musician: "Josec Luis" },
+          { role: "Percusión menor", musician: "Javier" },
           { role: "Percusión menor", musician: "Talo" },
           { role: "Tiple", musician: "Orlando" },
         ],
@@ -263,10 +252,10 @@ export const musicFrames: MusicFrame[] = [
         assignments: [
           { role: "Voz", musician: "Talo" },
           { role: "Tambora", musician: "Sebastian" },
-          { role: "Alegre", musician: "Por definir" },
+          { role: "Alegre", musician: "Javier" },
           { role: "Llamador", musician: "Orlando" },
-          { role: "Percusión menor (Coros)", musician: "Jose Luis" },
-          { role: "Percusión menor (Coros)", musician: "Cristian" },
+          { role: "Percusión menor", musician: "Jose Luis" },
+          { role: "Percusión menor", musician: "Cristian" },
         ],
       },
       {
@@ -277,7 +266,7 @@ export const musicFrames: MusicFrame[] = [
         assignments: [
           { role: "Voz", musician: "Talo" },
           { role: "Tambora", musician: "Sebastian" },
-          { role: "Alegre", musician: "Por definir" },
+          { role: "Alegre", musician: "Javier" },
           { role: "Llamador", musician: "Orlando" },
           { role: "Percusión menor (Coros)", musician: "Jose Luis" },
           { role: "Percusión menor (Coros)", musician: "Cristian" },
@@ -291,7 +280,7 @@ export const musicFrames: MusicFrame[] = [
         assignments: [
           { role: "Voz", musician: "Talo" },
           { role: "Tambora", musician: "Sebastian" },
-          { role: "Alegre", musician: "Por definir" },
+          { role: "Alegre", musician: "Javier" },
           { role: "Llamador", musician: "Orlando" },
           { role: "Clarinete", musician: "Jose Luis" },
           { role: "Percusión menor (Coros)", musician: "Cristian" },
@@ -304,7 +293,7 @@ export const musicFrames: MusicFrame[] = [
         assignments: [
           { role: "Voz", musician: "Talo" },
           { role: "Tambora", musician: "Sebastian" },
-          { role: "Alegre", musician: "Por definir" },
+          { role: "Alegre", musician: "Javier" },
           { role: "Llamador", musician: "Orlando" },
           { role: "Percusión menor (Coros)", musician: "Jose Luis" },
           { role: "Percusión menor (Coros)", musician: "Cristian" },
@@ -318,7 +307,7 @@ export const musicFrames: MusicFrame[] = [
         assignments: [
           { role: "Voz", musician: "Talo" },
           { role: "Tambora", musician: "Sebastian" },
-          { role: "Alegre", musician: "Por definir" },
+          { role: "Alegre", musician: "Javier" },
           { role: "Llamador", musician: "Orlando" },
           { role: "Clarinete", musician: "Jose Luis" },
           { role: "Percusión menor (Coros)", musician: "Cristian" },
@@ -329,7 +318,8 @@ export const musicFrames: MusicFrame[] = [
   {
     id: "costa-pacifica",
     name: "Cuadro Costa Pacífica",
-    shortDescription: "Repertorio con ritmos y sonoridades del Pacífico colombiano.",
+    shortDescription:
+      "Repertorio con ritmos y sonoridades del Pacífico colombiano.",
     maxDuration: "Pendiente por definir",
     uniform: "Pendiente por definir",
     rider: "Pendiente por definir",
@@ -341,10 +331,10 @@ export const musicFrames: MusicFrame[] = [
         assignments: [
           { role: "Voz", musician: "Talo" },
           { role: "Tambora", musician: "Sebastian" },
-          { role: "Redoblante", musician: "Por definir" },
+          { role: "Cununo", musician: "Javier" },
           { role: "Platillos", musician: "Orlando" },
           { role: "Clarinete", musician: "Jose Luis" },
-          { role: "Percusión menor", musician: "Cristian" },
+          { role: "Redoblante", musician: "Cristian" },
         ],
       },
       {
@@ -354,10 +344,10 @@ export const musicFrames: MusicFrame[] = [
         assignments: [
           { role: "Voz", musician: "Talo" },
           { role: "Tambora", musician: "Sebastian" },
-          { role: "Redoblante", musician: "Por definir" },
+          { role: "Cununo", musician: "Javier" },
           { role: "Platillos", musician: "Orlando" },
           { role: "Clarinete", musician: "Jose Luis" },
-          { role: "Percusión menor", musician: "Cristian" },
+          { role: "Redoblante", musician: "Cristian" },
         ],
       },
       {
@@ -366,7 +356,7 @@ export const musicFrames: MusicFrame[] = [
         assignments: [
           { role: "Voz", musician: "Talo" },
           { role: "Tambora", musician: "Sebastian" },
-          { role: "Alegre", musician: "Por definir" },
+          { role: "Cununo", musician: "Javier" },
           { role: "Percusión menor", musician: "Orlando" },
           { role: "Percusión menor", musician: "Jose Luis" },
           { role: "Percusión menor", musician: "Cristian" },
@@ -408,7 +398,7 @@ export const musicians = [
   },
   {
     name: "Sebastian Rodríguez",
-    instruments: "Tambora",
+    instruments: "Tambora y bajo",
     initials: "SR",
   },
   {
@@ -417,8 +407,8 @@ export const musicians = [
     initials: "OR",
   },
   {
-    name: "Por confirmar",
-    instruments: "Bajo, alegre y redoblante",
-    initials: "—",
+    name: "Javier",
+    instruments: "Alegre y percusión menor",
+    initials: "JS",
   },
 ]
