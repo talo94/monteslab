@@ -36,47 +36,45 @@ Final: A7 D`,
 Tengo mi mata de ruda… tengo mi mata de ruda…
 Yerbabuena y manzanilla…
 Pero la que yo más quiero ¡ombe!... **¡mata de azahar de la India!**
-O…ye mi mata ¡ombe! **¡mata de azahar de la India!**
-Lelei… mi… mata ¡ombe! **¡mata de azahar de la India!**
+Ooooye mi mata ¡ombe! **¡mata de azahar de la India!**
+Leleeeeei mi maaaaata ¡ombe! **¡mata de azahar de la India!**
 
-[[B]]
 
-Matica de azahar de la India **¡mata de azahar de la India!**
-Mi mata de Azahar… de la India ¡ombe! **¡mata de azahar de la India!** [[En la mitad de la frase entra PERCU]]
-Ay matica…de flores blancas… **¡mata de azahar de la India!**
-Matica de flores blancas eh… **¡mata de azahar de la India!**
+Ma*ti*ca de azahaaaaar de la India **¡mata de azahar de la India!**
+Ma*ti*ca de Azahaaaaar de la India ¡ombe! **¡mata de azahar de la India!** [[En la mitad de la frase entra PERCU]]
+Ay maticaaaaa de flores blancas… **¡mata de azahar de la India!**
+*Maticaaaa* de flores blancas eh… **¡mata de azahar de la India!**
 /Lele ei… mi mata ¡ombe!/ **¡mata de azahar de la India!**
 
 La riego por la mañana… la riego por las mañanas
 Se envidian los coralitos… mi mata se pone alegre ¡ombe!
 Dejando el suelo blanquito…
-O…ye mi mata ¡ombe! **¡mata de azahar de la India!**
-Lelei… mi… mata ¡ombe! **¡mata de azahar de la India!**
+Oooooye mi mata ¡ombe! **¡mata de azahar de la India!**
+Leleeeei mi maaaata ¡ombe! **¡mata de azahar de la India!**
 
-Yo me la llevo… me la llevo… **¡mata de azahar de la India!**
-Yo me la llevo, me la llevo ¡ombe! **¡mata de azahar de la India!**
-Pa’ la casa e’ tambolero ombe… **¡mata de azahar de la India!**
-Ay pa’ la casa de… e’ mi tambolero… **¡mata de azahar de la India!**
+Yo me la llevoooo me la llevo ome **¡mata de azahar de la India!**
+Yo me la llevoooo, me la llevo ¡ombe! **¡mata de azahar de la India!**
+*Pa’* la caseeeee’ tambolero ombe… **¡mata de azahar de la India!**
+*Pa’* la caseeeee’ mi tambolero… ehh**¡mata de azahar de la India!**
 
-Señores yo tengo mi mata eh… **¡mata de azahar de la India!**
-Señores yo te…ngo mi mata ¡eh! **¡mata de azahar de la India!**
+Se*ño*res tengo mi mata eeeeh… **¡mata de azahar de la India!**
+Señoreees tengo mi mataaaa ¡eh! **¡mata de azahar de la India!**
 /Lele ei… mi mata ¡ombe!/ **¡mata de azahar de la India!**
 
 Alevantate temprano… alevantate temprano… pa’ sus flores recogerlas
 Mata de Azahar de la India… la adoración de mi abuela…
-O…ye mi mata ¡ombe! **¡mata de azahar de la India!**
-Lelei… mi… mata ¡ombe! **¡mata de azahar de la India!**
+Oooooye mi mata ¡ombe! **¡mata de azahar de la India!**
+Leleeeeei mi maaaata ¡ombe! **¡mata de azahar de la India!**
 
-/Ay yo se la llevo a Ever Suarez/ombe **¡mata de azahar de la India!**
-/Se la llevo a Eulalia Gonzáles/ombe **¡mata de azahar de la India!**
-/Ay si no la quieren Señores/ ombe **¡mata de azahar de la India!**
-/Yo se la llevo a Pabla Florez/Eh…**¡mata de azahar de la India!**
+/Ay se la llevooo a Ever Suarez/ombe **¡mata de azahar de la India!**
+/Se_*la* llevo a Eulalia Gonzáles/ombe **¡mata de azahar de la India!**
+/Ay si no la quiereeeen Señoooores/ ombe **¡mata de azahar de la India!**
+/Yo *se* la llevo a Pabla Florez ehh/ **¡mata de azahar de la India!**
 
-Señores yo tengo mi mata…**¡mata de azahar de la India!**
-Señoooooooooooores yo tengo mi mata eh…**¡mata de azahar de la India!**
-Olele ei tengo mi mata **¡mata de azahar de la India!**
-Leleeeeeeeeeeeeeeeeeeeeeeeeei mi mata ombe **¡mata de azahar de la India!**
-Oye lelei huelo mi mata ombe… **¡mata de azahar de la India!** [[Terminamos todos en coro]]
+Señoreeees tengo mi mata…**¡mata de azahar de la India!**
+Señoooooooooooores tengo mi mata eh…**¡mata de azahar de la India!**
+Oleleeeeei tengo mi mata **¡mata de azahar de la India!**
+Oyeee leeeei tengo mi mata ombe… **¡mata de azahar de la India!** [[Terminamos todos en coro]]
 [[Corte justo acá para seguir solo con voces]]`,
 
   "solo-cumbia-hombres": `
