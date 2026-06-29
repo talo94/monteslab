@@ -10,11 +10,13 @@ import Giras from "./pages/Giras.tsx"
 import Grecia2026 from "./pages/giras/2026/Grecia/Grecia.tsx"
 import GreciaLetras from "./pages/giras/2026/Grecia/GreciaLetras.tsx"
 import EurotripFamiliar from "./pages/viajes/2026/EurotripFamiliar/EurotripFamiliar.tsx"
+import AussieGirl from "./pages/ideas/AussieGirl/AussieGirl.tsx"
 
 const HIDE_NAV_PATHS: readonly string[] = [
   routes.grecia2026,
   routes.grecia2026Letras,
   routes.eurotripFamiliar2026,
+  routes.aussieGirl,
 ]
 
 function AppRoutes() {
@@ -33,6 +35,7 @@ function AppRoutes() {
         <Route path={routes.grecia2026} element={<Grecia2026 />} />
         <Route path={routes.grecia2026Letras} element={<GreciaLetras />} />
         <Route path={routes.eurotripFamiliar2026} element={<EurotripFamiliar />} />
+        <Route path={routes.aussieGirl} element={<AussieGirl />} />
       </Routes>
     </>
   )

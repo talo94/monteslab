@@ -36,47 +36,45 @@ Final: A7 D`,
 Tengo mi mata de ruda… tengo mi mata de ruda…
 Yerbabuena y manzanilla…
 Pero la que yo más quiero ¡ombe!... **¡mata de azahar de la India!**
-O…ye mi mata ¡ombe! **¡mata de azahar de la India!**
-Lelei… mi… mata ¡ombe! **¡mata de azahar de la India!**
+Ooooye mi mata ¡ombe! **¡mata de azahar de la India!**
+Leleeeeei mi maaaaata ¡ombe! **¡mata de azahar de la India!**
 
-[[B]]
 
-Matica de azahar de la India **¡mata de azahar de la India!**
-Mi mata de Azahar… de la India ¡ombe! **¡mata de azahar de la India!** [[En la mitad de la frase entra PERCU]]
-Ay matica…de flores blancas… **¡mata de azahar de la India!**
-Matica de flores blancas eh… **¡mata de azahar de la India!**
+Ma*ti*ca de azahaaaaar de la India **¡mata de azahar de la India!**
+Ma*ti*ca de Azahaaaaar de la India ¡ombe! **¡mata de azahar de la India!** [[En la mitad de la frase entra PERCU]]
+Ay maticaaaaa de flores blancas… **¡mata de azahar de la India!**
+*Maticaaaa* de flores blancas eh… **¡mata de azahar de la India!**
 /Lele ei… mi mata ¡ombe!/ **¡mata de azahar de la India!**
 
 La riego por la mañana… la riego por las mañanas
 Se envidian los coralitos… mi mata se pone alegre ¡ombe!
 Dejando el suelo blanquito…
-O…ye mi mata ¡ombe! **¡mata de azahar de la India!**
-Lelei… mi… mata ¡ombe! **¡mata de azahar de la India!**
+Oooooye mi mata ¡ombe! **¡mata de azahar de la India!**
+Leleeeei mi maaaata ¡ombe! **¡mata de azahar de la India!**
 
-Yo me la llevo… me la llevo… **¡mata de azahar de la India!**
-Yo me la llevo, me la llevo ¡ombe! **¡mata de azahar de la India!**
-Pa’ la casa e’ tambolero ombe… **¡mata de azahar de la India!**
-Ay pa’ la casa de… e’ mi tambolero… **¡mata de azahar de la India!**
+Yo me la llevoooo me la llevo ome **¡mata de azahar de la India!**
+Yo me la llevoooo, me la llevo ¡ombe! **¡mata de azahar de la India!**
+*Pa’* la caseeeee’ tambolero ombe… **¡mata de azahar de la India!**
+*Pa’* la caseeeee’ mi tambolero… ehh**¡mata de azahar de la India!**
 
-Señores yo tengo mi mata eh… **¡mata de azahar de la India!**
-Señores yo te…ngo mi mata ¡eh! **¡mata de azahar de la India!**
+Se*ño*res tengo mi mata eeeeh… **¡mata de azahar de la India!**
+Señoreees tengo mi mataaaa ¡eh! **¡mata de azahar de la India!**
 /Lele ei… mi mata ¡ombe!/ **¡mata de azahar de la India!**
 
 Alevantate temprano… alevantate temprano… pa’ sus flores recogerlas
 Mata de Azahar de la India… la adoración de mi abuela…
-O…ye mi mata ¡ombe! **¡mata de azahar de la India!**
-Lelei… mi… mata ¡ombe! **¡mata de azahar de la India!**
+Oooooye mi mata ¡ombe! **¡mata de azahar de la India!**
+Leleeeeei mi maaaata ¡ombe! **¡mata de azahar de la India!**
 
-/Ay yo se la llevo a Ever Suarez/ombe **¡mata de azahar de la India!**
-/Se la llevo a Eulalia Gonzáles/ombe **¡mata de azahar de la India!**
-/Ay si no la quieren Señores/ ombe **¡mata de azahar de la India!**
-/Yo se la llevo a Pabla Florez/Eh…**¡mata de azahar de la India!**
+/Ay se la llevooo a Ever Suarez/ombe **¡mata de azahar de la India!**
+/Se_*la* llevo a Eulalia Gonzáles/ombe **¡mata de azahar de la India!**
+/Ay si no la quiereeeen Señoooores/ ombe **¡mata de azahar de la India!**
+/Yo *se* la llevo a Pabla Florez ehh/ **¡mata de azahar de la India!**
 
-Señores yo tengo mi mata…**¡mata de azahar de la India!**
-Señoooooooooooores yo tengo mi mata eh…**¡mata de azahar de la India!**
-Olele ei tengo mi mata **¡mata de azahar de la India!**
-Leleeeeeeeeeeeeeeeeeeeeeeeeei mi mata ombe **¡mata de azahar de la India!**
-Oye lelei huelo mi mata ombe… **¡mata de azahar de la India!** [[Terminamos todos en coro]]
+Señoreeees tengo mi mata…**¡mata de azahar de la India!**
+Señoooooooooooores tengo mi mata eh…**¡mata de azahar de la India!**
+Oleleeeeei tengo mi mata **¡mata de azahar de la India!**
+Oyeee leeeei tengo mi mata ombe… **¡mata de azahar de la India!** [[Terminamos todos en coro]]
 [[Corte justo acá para seguir solo con voces]]`,
 
   "solo-cumbia-hombres": `
@@ -242,30 +240,6 @@ Eeee eee eee suenan los tambores como e’*
 
   "garzon-yo-soy-de-ti": `[[Intro: F#m E D A / C#m A E A / D A E7 A — viene punteo y ahí si inicio a cantar:]]
 
-Hay un lugar en mi patria… Donde los buenos recuerdos
-Brotan de mi corazón, cuando yo llego a ese pueblo
-Brotan de mi corazón, cuando yo llego a ese pueblo
-
-Desde el Huila la alegría… De la copla su cantar
-En el cielo esta mi Dios y en Garzón su catedral
-En el cielo esta mi Dios y en Garzón su catedral
-
-Es posible que de tanto, como te quiero Garzón
-/Está en el centro del Huila y en el de mi corazón/
-
-[[Intro: F#m E D A / C#m A E A / D A E7 A — viene punteo y ahí si inicio a cantar:]]
-
-De Rufines a Epifinia… y Sanabra en el San Pedro
-De Sendoya esta la banda, y de Ramiro mi regreso
-De Sendoya esta la banda, y de Ramiro mi regreso
-
-Desde el Huila la alegría… De la copla su cantar
-En el cielo esta mi Dios y en Garzón su catedral
-En el cielo esta mi Dios y en Garzón su catedral
-
-Es posible que de tanto, como te quiero Garzón
-/Está en el centro del Huila y en el de mi corazón/ [[viene punteo D A E Bb A]]
-
 [[Intro: cortes… Vientos y Guitarra e inicio a cantar:]]
 
 La tierra de mis recuerdos que incontables son decirlos
@@ -417,19 +391,16 @@ Si va a carrataplanear le voy a quemar el cun.
 Carrataplun, carrataplun le quemo el cun, le quemo el cun
 Le quemo el cun, carrataplun, carrataplun, le quemo el cun
 
-Mi suegro con su escopeta pues se subió al arrayan
-Donde yo con Enriqueta ahí hago carrataplan
-El viejo en el cojo del árbol y en la raíz
-Empecé el carrataplan con mi negrita feliz
-Contenta dijo Enriqueta ay negro yo quiero cantar
-Suegro con su escopeta pues se subió al arrayan
-Donde yo con Enriqueta ahí hago carrataplan
-El viejo en el cojo del árbol y en la raíz
-Empecé el carrataplan con mi negrita feliz
-Contenta dijo Enriqueta ay negro yo quiero cantar
-Le dije, miré pa’ arriba que del susto va a llorar
-Mi suegro nos apuntaba con una de 2 cañones
-Y yo por salir corriendo deje hasta los pantalones
+Mi suegro con su escopeta fue y se subió al arrayán
+Donde yo con Enriqueta diario hago carrataplán
+El viejo en el coco 'el árbol y yo abajo en la raíz
+Empecé el carrataplán con mi negrita feliz
+
+Contenta dijo Enriqueta, ay negro yo quiero cantar
+Le dije mire pa' arriba que del susto va a llorar
+Mi suegro nos apuntaba con una de dos cañones
+Y yo por salir corriendo dejé hasta los pantalones
+
 Si con el carrataplan yo le doy carrataplun
 Si va a carrataplanear le voy a quemar el cun. [[CORO]]
 

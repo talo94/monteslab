@@ -241,10 +241,10 @@ export const musicFrames: MusicFrame[] = [
         assignments: [
           { role: "Voz", musician: "Talo" },
           { role: "Tambora", musician: "Sebastian" },
-          { role: "Alegre", musician: "Por definir" },
+          { role: "Alegre", musician: "Javier" },
           { role: "Llamador", musician: "Orlando" },
-          { role: "Percusión menor (Coros)", musician: "Jose Luis" },
-          { role: "Percusión menor (Coros)", musician: "Cristian" },
+          { role: "Percusión menor", musician: "Jose Luis" },
+          { role: "Percusión menor", musician: "Cristian" },
         ],
       },
       {
@@ -255,7 +255,7 @@ export const musicFrames: MusicFrame[] = [
         assignments: [
           { role: "Voz", musician: "Talo" },
           { role: "Tambora", musician: "Sebastian" },
-          { role: "Alegre", musician: "Por definir" },
+          { role: "Alegre", musician: "Javier" },
           { role: "Llamador", musician: "Orlando" },
           { role: "Percusión menor (Coros)", musician: "Jose Luis" },
           { role: "Percusión menor (Coros)", musician: "Cristian" },
@@ -269,7 +269,7 @@ export const musicFrames: MusicFrame[] = [
         assignments: [
           { role: "Voz", musician: "Talo" },
           { role: "Tambora", musician: "Sebastian" },
-          { role: "Alegre", musician: "Por definir" },
+          { role: "Alegre", musician: "Javier" },
           { role: "Llamador", musician: "Orlando" },
           { role: "Clarinete", musician: "Jose Luis" },
           { role: "Percusión menor (Coros)", musician: "Cristian" },
@@ -282,7 +282,7 @@ export const musicFrames: MusicFrame[] = [
         assignments: [
           { role: "Voz", musician: "Talo" },
           { role: "Tambora", musician: "Sebastian" },
-          { role: "Alegre", musician: "Por definir" },
+          { role: "Alegre", musician: "Javier" },
           { role: "Llamador", musician: "Orlando" },
           { role: "Percusión menor (Coros)", musician: "Jose Luis" },
           { role: "Percusión menor (Coros)", musician: "Cristian" },
@@ -296,7 +296,7 @@ export const musicFrames: MusicFrame[] = [
         assignments: [
           { role: "Voz", musician: "Talo" },
           { role: "Tambora", musician: "Sebastian" },
-          { role: "Alegre", musician: "Por definir" },
+          { role: "Alegre", musician: "Javier" },
           { role: "Llamador", musician: "Orlando" },
           { role: "Clarinete", musician: "Jose Luis" },
           { role: "Percusión menor (Coros)", musician: "Cristian" },
@@ -320,10 +320,10 @@ export const musicFrames: MusicFrame[] = [
         assignments: [
           { role: "Voz", musician: "Talo" },
           { role: "Tambora", musician: "Sebastian" },
-          { role: "Redoblante", musician: "Por definir" },
+          { role: "Cununo", musician: "Javier" },
           { role: "Platillos", musician: "Orlando" },
           { role: "Clarinete", musician: "Jose Luis" },
-          { role: "Percusión menor", musician: "Cristian" },
+          { role: "Redoblante", musician: "Cristian" },
         ],
       },
       {
@@ -333,10 +333,10 @@ export const musicFrames: MusicFrame[] = [
         assignments: [
           { role: "Voz", musician: "Talo" },
           { role: "Tambora", musician: "Sebastian" },
-          { role: "Redoblante", musician: "Por definir" },
+          { role: "Cununo", musician: "Javier" },
           { role: "Platillos", musician: "Orlando" },
           { role: "Clarinete", musician: "Jose Luis" },
-          { role: "Percusión menor", musician: "Cristian" },
+          { role: "Redoblante", musician: "Cristian" },
         ],
       },
       {
@@ -345,7 +345,7 @@ export const musicFrames: MusicFrame[] = [
         assignments: [
           { role: "Voz", musician: "Talo" },
           { role: "Tambora", musician: "Sebastian" },
-          { role: "Alegre", musician: "Por definir" },
+          { role: "Cununo", musician: "Javier" },
           { role: "Percusión menor", musician: "Orlando" },
           { role: "Percusión menor", musician: "Jose Luis" },
           { role: "Percusión menor", musician: "Cristian" },
@@ -387,7 +387,7 @@ export const musicians = [
   },
   {
     name: "Sebastian Rodríguez",
-    instruments: "Tambora",
+    instruments: "Tambora y bajo",
     initials: "SR",
   },
   {
@@ -396,8 +396,8 @@ export const musicians = [
     initials: "KT",
   },
   {
-    name: "Por confirmar",
-    instruments: "Bajo, alegre y redoblante",
-    initials: "—",
+    name: "Javier",
+    instruments: "Alegre y percusión menor",
+    initials: "JS",
   },
 ]
