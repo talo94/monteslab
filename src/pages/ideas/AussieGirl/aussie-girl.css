@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;500;600;700&display=swap");
+
+.aussie-girl-page {
+  font-family: "Quicksand", ui-sans-serif, system-ui, sans-serif;
+}
+
+.aussie-girl-page .aussie-script {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+}
