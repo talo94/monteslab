@@ -285,30 +285,6 @@ Prende la vela que la cumbiamba pide candela* x3
 
   "garzon-yo-soy-de-ti": `[[Intro: F#m E D A / C#m A E A / D A E7 A — viene punteo y ahí si inicio a cantar:]]
 
-Hay un lugar en mi patria… Donde los buenos recuerdos
-Brotan de mi corazón, cuando yo llego a ese pueblo
-Brotan de mi corazón, cuando yo llego a ese pueblo
-
-Desde el Huila la alegría… De la copla su cantar
-En el cielo esta mi Dios y en Garzón su catedral
-En el cielo esta mi Dios y en Garzón su catedral
-
-Es posible que de tanto, como te quiero Garzón
-/Está en el centro del Huila y en el de mi corazón/
-
-[[Intro: F#m E D A / C#m A E A / D A E7 A — viene punteo y ahí si inicio a cantar:]]
-
-De Rufines a Epifinia… y Sanabra en el San Pedro
-De Sendoya esta la banda, y de Ramiro mi regreso
-De Sendoya esta la banda, y de Ramiro mi regreso
-
-Desde el Huila la alegría… De la copla su cantar
-En el cielo esta mi Dios y en Garzón su catedral
-En el cielo esta mi Dios y en Garzón su catedral
-
-Es posible que de tanto, como te quiero Garzón
-/Está en el centro del Huila y en el de mi corazón/ [[viene punteo D A E Bb A]]
-
 [[Intro: cortes… Vientos y Guitarra e inicio a cantar:]]
 
 La tierra de mis recuerdos que incontables son decirlos
