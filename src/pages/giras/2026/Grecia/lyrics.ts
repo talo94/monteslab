@@ -233,54 +233,9 @@ Eeee eee eee suenan los tambores como e’*
 *Quiribumba… quiriba… *x4 [[corte]] [[Repiques con cambio de tempo — Cambio de Ritmo JORICAMBA]]
 *¡Ohhhhhhhhhhhhhhhh! ¡Ah!* x2
 [[Comienza ritmo más rápido]]
-[[3 compases y la voz comienza:]]
-
-*Mapaleeeeee… mapale, mapale, mapale* x2 [[4 compases y al 5 la voz grita:]]
-
-*¡Fuerza negra!*
-[[4 compases y al 5 la voz grita:]]
-
-*¡Eeeeeeeeeeeee lele lela!* x2 *Leila* x4 [[CORTE]]
-[[2 compases y la voz comienza:]]
-
-*Negra… mueve tu
-Cadera… que me tiene loco…
-Dame dame más…* [[Cambio ritmo]] [[4 compases y al 5 la voz grita:]]
-*¡Pa! x12* [[Ritmo normal]]
-
-[[14 compases entre variaciones de Percus]]
-
-*Aelalae aelala…* x2
-*Aca esta la negra samba
-Con la bemba colora’* x2
-[[4 compases y la voz comienzan 5:]]
-
-*Negra… mueve tu cadera…
-Que me tiene loco…
-Dame dame más…* [[Cambio ritmo]] [[2 compases y al 3 la voz grita:]]
-*¡Pa!* [[19 Y EN EL 20 ENTRA VOZ:]]
-
-/Volvi bailando este hermoso mapale/
-/Nadie conmigo se debe meter/
-*Mapale... mapale... mapalé, mapalé, mapalé* x2 [[CORTE — Cambio ritmo JORICAMBA]]
-[[2 compases y empieza la voz:]]
 
 *Ven… negrita ven…*
-[[2 compases y empieza la voz:]]
 
-*Que va a empeza… el mapale…*
-
-*Mapalé, mapalé, mapalé*
-[[Joricamba + medio rápido + rápido]]
-
-[[LLAMADO ALEGRE e inician todos — 16 compases entre variaciones de Percus]]
-
-*Negrita ven, prende la vela…
-Negrita veeeeeeen, prende la vela
-Que va’ a empeza’ la cumbia e’ Marbella
-Cerca del ma’ bajo las estrellas
-Prende la vela que la cumbiamba pide candela* x3
-[[10 compases y finaliza con]]
 *¡Eh!*`,
 
   "garzon-yo-soy-de-ti": `[[Intro: F#m E D A / C#m A E A / D A E7 A — viene punteo y ahí si inicio a cantar:]]
@@ -367,20 +322,6 @@ Y si usted cambia lo veo bien… si es solidario lo veo bien…
 Si usted respeta lo veo bien… cumpla las normas lo veo bien…
 Porque a Pereira lo veo bien…`,
 
-  kikiriqui: `[[Intro:]]
-Mi negra tiene guardado un bonito animalito ¿Cómo?
-Mi negra tiene guardado un bonito animalito
-/No me lo quiere mostrar, porque es bastante bravito/ ¡qué bárbara!
-
-Y cuando yo me le acerco, me hace kikiriki…
-Y cuando yo me le acerco, me hace kikiriki…
-/Y por eso es que mi negra, ay no me lo muestra a mí/
-
-/Ay que coco que cocorollo… ese animal me cantó
-Que cocorollo, que kikiriki… de noche me canta así/
-
-[[Voz Orlando]]`,
-
   "negro-picante": `[[Voz Orlando]]
 [[Am]]
 
@@ -413,13 +354,26 @@ Y soy un negro picante y tengo 3 dientes de oro/
 
 Cuando voy a la parranda no la quisiera dejar
 Cuando saco una pareja yo la saco es pa’ bailar
-Como cuando la mujer que a mí me quiera
+La mujer que a mí me quiera
 Tiene que pisar con maña
 Porque soy muy toma trago y ella verá si se amaña
 
 /Y tengo mi morenita, que la quiero y que la adoro
 Y soy un negro picante y tengo 3 dientes de oro/`,
 
+  kikiriqui: `[[Intro:]]
+Mi negra tiene guardado un bonito animalito ¿Cómo?
+Mi negra tiene guardado un bonito animalito
+/No me lo quiere mostrar, porque es bastante bravito/ ¡qué bárbara!
+
+Y cuando yo me le acerco, me hace kikiriki…
+Y cuando yo me le acerco, me hace kikiriki…
+/Y por eso es que mi negra, ay no me lo muestra a mí/
+
+/Ay que coco que cocorollo… ese animal me cantó
+Que cocorollo, que kikiriki… de noche me canta así/
+
+[[Voz Orlando]]`,
   carrataplan: `[[Voz Orlando]]
 
 El carrataplan es bueno, pero tiene sus problemas
