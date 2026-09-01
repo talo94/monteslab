@@ -1,0 +1,5 @@
+# Generated deployment artifacts, not repository source.
+.vercel/
+node_modules/
+dist/
+dist-ssr/

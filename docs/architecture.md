@@ -24,6 +24,8 @@ Montes Lab is a personal, public publishing space for ideas, trips, music, and p
 
 `npm run check` is the shared local and CI quality gate: Prettier, ESLint, and TypeScript. `npm run build` runs that gate before the Vite production build. A versioned pre-commit hook invokes the same checks. GitHub Actions validates pull requests and `main`; Vercel uses the production build command.
 
+Generated Vercel artifacts under `.vercel/` are excluded from Git, Prettier, and ESLint. The versioned `vercel.json` remains subject to formatting checks.
+
 ## Privacy boundary
 
 The site is public by default and has no authentication layer. Credentials, booking codes, identity or financial numbers, private contact information, and exact live locations must not enter published content. Names, future travel details, lodging addresses, unpublished lyrics, and internal production information require an explicit publishing decision.
