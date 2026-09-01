@@ -1,9 +1,9 @@
-import type { ReactNode } from "react";
+import type { ReactNode } from "react"
 
 type TripCardProps = {
-  children: ReactNode;
-  className?: string;
-};
+  children: ReactNode
+  className?: string
+}
 
 export function TripCard({ children, className = "" }: TripCardProps) {
   return (
@@ -16,5 +16,5 @@ export function TripCard({ children, className = "" }: TripCardProps) {
     >
       {children}
     </div>
-  );
+  )
 }

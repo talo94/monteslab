@@ -1,0 +1,4 @@
+interface:
+  display_name: "Montes Lab Implementation Plan"
+  short_description: "Convert approved designs into executable tasks"
+  default_prompt: "Use $implementation-plan to create tasks for this approved RFC and pre-work."

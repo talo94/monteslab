@@ -26,7 +26,15 @@
 
 /* Sans del sistema (sin fuentes web añadidas) — coherente con Grecia y el resto del sitio. */
 .font-family-trip-sans {
-  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
 }
 
 .font-family-trip-serif {

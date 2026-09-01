@@ -1,9 +1,9 @@
-import { TripDataTable } from "./TripDataTable";
-import type { ItineraryDay } from "./types";
+import { TripDataTable } from "./TripDataTable"
+import type { ItineraryDay } from "./types"
 
 type ItineraryDayBlockProps = {
-  data: ItineraryDay;
-};
+  data: ItineraryDay
+}
 
 export function ItineraryDayBlock({ data }: ItineraryDayBlockProps) {
   return (
@@ -16,5 +16,5 @@ export function ItineraryDayBlock({ data }: ItineraryDayBlockProps) {
         {data.subtotal}
       </p>
     </div>
-  );
+  )
 }

@@ -34,7 +34,10 @@ function AppRoutes() {
         <Route path={routes.giras} element={<Giras />} />
         <Route path={routes.grecia2026} element={<Grecia2026 />} />
         <Route path={routes.grecia2026Letras} element={<GreciaLetras />} />
-        <Route path={routes.eurotripFamiliar2026} element={<EurotripFamiliar />} />
+        <Route
+          path={routes.eurotripFamiliar2026}
+          element={<EurotripFamiliar />}
+        />
         <Route path={routes.aussieGirl} element={<AussieGirl />} />
       </Routes>
     </>

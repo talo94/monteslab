@@ -1,0 +1,4 @@
+interface:
+  display_name: "Montes Lab Technical Pre-work"
+  short_description: "Turn approved RFCs into technical decisions"
+  default_prompt: "Use $technical-prework to prepare the technical design for this approved RFC."

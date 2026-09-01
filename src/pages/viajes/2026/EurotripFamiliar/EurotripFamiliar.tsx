@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { citySurfaceClass } from "@/components/trip/gradients";
+import { useEffect, useState } from "react"
+import { citySurfaceClass } from "@/components/trip/gradients"
 import {
   type CityTab,
   ItineraryDayBlock,
@@ -9,7 +9,7 @@ import {
   TripPageLayout,
   TripSectionTitle,
   TripTopBar,
-} from "@/components/trip";
+} from "@/components/trip"
 import {
   eurotripCities,
   eurotripHero,
@@ -19,18 +19,22 @@ import {
   topNav,
   totalBudget,
   utilityNotes,
-} from "./data";
+} from "./data"
 
 function CityPanel({ city }: { city: CityTab }) {
-  const surface = citySurfaceClass[city.cover.gradient];
+  const surface = citySurfaceClass[city.cover.gradient]
 
   return (
     <div className="space-y-6">
       <div className="grid gap-5 lg:grid-cols-[1.15fr_0.85fr]">
         <TripCard>
-          <div className={`relative h-full overflow-hidden p-7 text-white ${surface}`}>
+          <div
+            className={`relative h-full overflow-hidden p-7 text-white ${surface}`}
+          >
             <div className="relative z-[1]">
-              <span className="inline-block rounded-full bg-white/20 px-3 py-1.5 text-xs font-normal  tracking-[0.03em] text-white">                {city.cover.tag}
+              <span className="inline-block rounded-full bg-white/20 px-3 py-1.5 text-xs font-normal  tracking-[0.03em] text-white">
+                {" "}
+                {city.cover.tag}
               </span>
               <h2 className="mb-0 mt-3 font-['Source_Serif_4',serif] text-4xl font-light leading-none sm:text-5xl">
                 {city.cover.title}
@@ -42,17 +46,18 @@ function CityPanel({ city }: { city: CityTab }) {
           </div>
         </TripCard>
         <TripCard className="p-7">
-          <h4 className="mb-0 mt-0 font-['Source_Serif_4',serif] text-xl font-light">Snapshot</h4>
+          <h4 className="mb-0 mt-0 font-['Source_Serif_4',serif] text-xl font-light">
+            Snapshot
+          </h4>
           <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
             {city.snapshot.map((s) => (
-              <div
-                key={s.label}
-                className="rounded-2xl bg-ml-bg/80 p-4"
-              >
+              <div key={s.label} className="rounded-2xl bg-ml-bg/80 p-4">
                 <strong className="block font-['Source_Serif_4',serif] text-[22px] font-light text-ml-ink">
                   {s.label}
                 </strong>
-                <span className="mt-1 block text-sm text-ml-muted">{s.value}</span>
+                <span className="mt-1 block text-sm text-ml-muted">
+                  {s.value}
+                </span>
               </div>
             ))}
           </div>
@@ -61,14 +66,18 @@ function CityPanel({ city }: { city: CityTab }) {
 
       <div className="grid gap-5 lg:grid-cols-[1.15fr_0.85fr]">
         <TripCard className="p-6 sm:p-8">
-          <h4 className="mb-3.5 mt-0 font-['Source_Serif_4',serif] text-xl font-light">Itinerario propuesto</h4>
+          <h4 className="mb-3.5 mt-0 font-['Source_Serif_4',serif] text-xl font-light">
+            Itinerario propuesto
+          </h4>
           {city.itinerary.map((d) => (
             <ItineraryDayBlock key={d.id} data={d} />
           ))}
         </TripCard>
         <div className="space-y-5">
           <TripCard className="p-6 sm:p-8">
-            <h4 className="mb-3.5 mt-0 font-['Source_Serif_4',serif] text-xl font-light">Checklist</h4>
+            <h4 className="mb-3.5 mt-0 font-['Source_Serif_4',serif] text-xl font-light">
+              Checklist
+            </h4>
             <ul className="euro-checklist">
               {city.checklist.map((item) => (
                 <li key={item}>
@@ -79,21 +88,29 @@ function CityPanel({ city }: { city: CityTab }) {
             </ul>
           </TripCard>
           <TripCard className="p-6 sm:p-8">
-            <h4 className="mb-3.5 mt-0 font-['Source_Serif_4',serif] text-xl font-light">Presupuesto estimado</h4>
+            <h4 className="mb-3.5 mt-0 font-['Source_Serif_4',serif] text-xl font-light">
+              Presupuesto estimado
+            </h4>
             {city.budget.map((row) => (
               <div
                 key={row.label}
                 className="grid grid-cols-[1fr_auto] gap-2.5 border-b border-dotted border-[var(--color-trip-line-soft)] py-2.5 text-sm last:border-0"
               >
                 <span className="text-ml-ink">
-                  {row.label.includes("Total") ? <strong>{row.label}</strong> : row.label}
+                  {row.label.includes("Total") ? (
+                    <strong>{row.label}</strong>
+                  ) : (
+                    row.label
+                  )}
                 </span>
                 <strong className="text-ml-ink">{row.amount}</strong>
               </div>
             ))}
           </TripCard>
           <TripCard className="p-6 sm:p-8">
-            <h4 className="mb-3.5 mt-0 font-['Source_Serif_4',serif] text-xl font-light">Mapa</h4>
+            <h4 className="mb-3.5 mt-0 font-['Source_Serif_4',serif] text-xl font-light">
+              Mapa
+            </h4>
             <div className="overflow-hidden rounded-2xl bg-ml-card/50">
               <iframe
                 title={`Mapa · ${city.cover.title}`}
@@ -126,21 +143,22 @@ function CityPanel({ city }: { city: CityTab }) {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default function EurotripFamiliar() {
-  const [activeCity, setActiveCity] = useState<string>(eurotripCities[0].id);
+  const [activeCity, setActiveCity] = useState<string>(eurotripCities[0].id)
 
   useEffect(() => {
-    const prev = document.title;
-    document.title = "Eurotrip 2026 · Talo Family Guide";
+    const prev = document.title
+    document.title = "Eurotrip 2026 · Talo Family Guide"
     return () => {
-      document.title = prev;
-    };
-  }, []);
+      document.title = prev
+    }
+  }, [])
 
-  const current = eurotripCities.find((c) => c.id === activeCity) ?? eurotripCities[0];
+  const current =
+    eurotripCities.find((c) => c.id === activeCity) ?? eurotripCities[0]
 
   return (
     <TripPageLayout>
@@ -213,7 +231,9 @@ export default function EurotripFamiliar() {
                     key={f.title + f.date}
                     className="grid border-b border-dotted border-[var(--color-trip-line-soft)] py-4 last:border-0 md:grid-cols-[minmax(5rem,auto)_1fr_auto] md:items-start md:gap-3.5"
                   >
-                    <div className="min-w-[4.5rem] text-sm font-bold text-ml-ink">{f.date}</div>
+                    <div className="min-w-[4.5rem] text-sm font-bold text-ml-ink">
+                      {f.date}
+                    </div>
                     <div>
                       <strong className="text-ml-ink">{f.title}</strong>
                       <div className="text-sm text-ml-muted">{f.detail}</div>
@@ -233,7 +253,9 @@ export default function EurotripFamiliar() {
             </TripCard>
             <div className="space-y-5">
               <TripCard className="p-6 sm:p-8">
-                <h3 className="mb-0 mt-0 font-['Source_Serif_4',serif] text-2xl font-light text-ml-ink sm:text-3xl">Hoteles</h3>
+                <h3 className="mb-0 mt-0 font-['Source_Serif_4',serif] text-2xl font-light text-ml-ink sm:text-3xl">
+                  Hoteles
+                </h3>
                 {hotels.map((hotel) => (
                   <div
                     key={hotel.name + hotel.mapUrl}
@@ -262,12 +284,16 @@ export default function EurotripFamiliar() {
                 ))}
               </TripCard>
               <TripCard className="p-6 sm:p-8">
-                <h3 className="mb-0 mt-0 font-['Source_Serif_4',serif] text-2xl font-light text-ml-ink sm:text-3xl">Presupuesto total estimado</h3>
+                <h3 className="mb-0 mt-0 font-['Source_Serif_4',serif] text-2xl font-light text-ml-ink sm:text-3xl">
+                  Presupuesto total estimado
+                </h3>
                 <div className="mt-3 flex flex-wrap items-baseline justify-between gap-2">
                   <strong>Total aproximado por persona</strong>
                   <strong className="text-ml-ink">{totalBudget.summary}</strong>
                 </div>
-                <p className="mt-3 text-sm leading-relaxed text-ml-muted">{totalBudget.description}</p>
+                <p className="mt-3 text-sm leading-relaxed text-ml-muted">
+                  {totalBudget.description}
+                </p>
               </TripCard>
             </div>
           </div>
@@ -298,18 +324,28 @@ export default function EurotripFamiliar() {
               </button>
             ))}
           </div>
-          <div className="mt-5" role="tabpanel" aria-label={current.cover.title}>
+          <div
+            className="mt-5"
+            role="tabpanel"
+            aria-label={current.cover.title}
+          >
             <CityPanel city={current} />
           </div>
         </section>
 
         <section id="notes" className="scroll-mt-24">
-          <TripSectionTitle>Notas útiles para la versión final</TripSectionTitle>
+          <TripSectionTitle>
+            Notas útiles para la versión final
+          </TripSectionTitle>
           <div className="grid gap-3.5 md:grid-cols-2 lg:grid-cols-3">
             {utilityNotes.map((u) => (
               <TripCard key={u.id} className="p-5 sm:p-6">
-                <h4 className="m-0 font-['Source_Serif_4',serif] text-lg font-light text-ml-ink">{u.title}</h4>
-                <p className="m-0 mt-2.5 text-sm leading-relaxed text-ml-muted">{u.body}</p>
+                <h4 className="m-0 font-['Source_Serif_4',serif] text-lg font-light text-ml-ink">
+                  {u.title}
+                </h4>
+                <p className="m-0 mt-2.5 text-sm leading-relaxed text-ml-muted">
+                  {u.body}
+                </p>
               </TripCard>
             ))}
           </div>
@@ -320,5 +356,5 @@ export default function EurotripFamiliar() {
         </footer>
       </main>
     </TripPageLayout>
-  );
+  )
 }

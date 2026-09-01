@@ -1,4 +1,4 @@
-import type { UtilityNote } from "@/components/trip";
+import type { UtilityNote } from "@/components/trip"
 
 export const utilityNotes: UtilityNote[] = [
   {
@@ -16,7 +16,7 @@ export const utilityNotes: UtilityNote[] = [
     title: "3. Qué ya quedó bien armado",
     body: "La estructura general del viaje, el orden lógico de las visitas, el reparto de energía y el balance entre lo turístico, lo espiritual y lo familiar.",
   },
-];
+]
 
 export const footerNote =
-  "Diseñado como guía visual de viaje. Datos y horarios sensibles revisados en fuentes oficiales antes de esta versión: Vaticano, Coliseo, Pantheon, Versalles, Lourdes, Fátima, Oceanogràfic y Catedral de Valencia.";
+  "Diseñado como guía visual de viaje. Datos y horarios sensibles revisados en fuentes oficiales antes de esta versión: Vaticano, Coliseo, Pantheon, Versalles, Lourdes, Fátima, Oceanogràfic y Catedral de Valencia."

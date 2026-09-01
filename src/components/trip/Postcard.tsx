@@ -1,12 +1,12 @@
-import { citySurfaceClass } from "./gradients";
-import type { Postcard as PostcardType } from "./types";
+import { citySurfaceClass } from "./gradients"
+import type { Postcard as PostcardType } from "./types"
 
 type PostcardProps = {
-  data: PostcardType;
-};
+  data: PostcardType
+}
 
 export function Postcard({ data }: PostcardProps) {
-  const surface = citySurfaceClass[data.gradient];
+  const surface = citySurfaceClass[data.gradient]
 
   return (
     <article
@@ -41,8 +41,10 @@ export function Postcard({ data }: PostcardProps) {
             </span>
           ))}
         </p>
-        <p className="m-0 mt-4 text-sm text-white/85">Ver guía · próximamente</p>
+        <p className="m-0 mt-4 text-sm text-white/85">
+          Ver guía · próximamente
+        </p>
       </div>
     </article>
-  );
+  )
 }
