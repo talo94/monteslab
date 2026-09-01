@@ -21,9 +21,12 @@ npm run lint          # run ESLint
 npm run typecheck     # run TypeScript checks
 npm run check         # run all non-building checks
 npm run build         # run checks and create the production build
+npm run build:vercel  # type-check and compile for Vercel deployment
 ```
 
 Do not bypass a failing hook. Fix the issue and run `npm run check` again.
+
+GitHub CI retains the full `npm run build` gate. Vercel uses `npm run build:vercel`, explicitly selected by `buildCommand` in `vercel.json`, so deployment does not re-run source formatting or lint checks on the prepared build environment. The versioned `vercel.json` is still checked by Prettier locally and in CI. Require the GitHub `quality-and-build` check before merging; the Vercel build alone is not the quality gate.
 
 ## Delivery
 

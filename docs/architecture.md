@@ -22,7 +22,7 @@ Montes Lab is a personal, public publishing space for ideas, trips, music, and p
 
 ## Quality and delivery
 
-`npm run check` is the shared local and CI quality gate: Prettier, ESLint, and TypeScript. `npm run build` runs that gate before the Vite production build. A versioned pre-commit hook invokes the same checks. GitHub Actions validates pull requests and `main`; Vercel uses the production build command.
+`npm run check` is the shared local and CI quality gate: Prettier, ESLint, and TypeScript. `npm run build` runs that gate before the Vite production build. A versioned pre-commit hook invokes the same checks. GitHub Actions validates pull requests and `main`. Vercel uses `npm run build:vercel`, explicitly configured via `buildCommand` in `vercel.json`, to run TypeScript and Vite without repeating formatting and lint on deployment artifacts. Require the GitHub `quality-and-build` check before merging; this repository configuration does not itself enforce branch protection or make Vercel wait for GitHub CI.
 
 Generated Vercel artifacts under `.vercel/` are excluded from Git, Prettier, and ESLint. The versioned `vercel.json` remains subject to formatting checks.
 
