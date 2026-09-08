@@ -1,0 +1,66 @@
+import type { Hotel } from "./types"
+export const hotels: Hotel[] = [
+  {
+    id: "lisboa-nova",
+    name: "Pensao Nova Goa",
+    city: "Lisboa",
+    address: "Rua Arco Marquês do Alegrete 13, Lisboa, Portugal",
+    checkIn: "2026-09-08",
+    checkOut: "2026-09-10",
+    hours: "Entrada desde 13:30 · salida 11:30–12:00",
+    note: "El día 10 salimos temprano hacia Fátima: acordar la salida antes de desayunar.",
+  },
+  {
+    id: "fatima",
+    name: "Hotel Nossa Senhora de Lurdes",
+    city: "Fátima",
+    address: "Rua Nossa Senhora de Lurdes 8, Fátima, Portugal",
+    checkIn: "2026-09-10",
+    checkOut: "2026-09-11",
+    hours: "Entrada 15:00–23:30 · salida hasta 12:00",
+    note: "Pedir guardar las maletas al llegar por la mañana; todavía sin confirmar.",
+  },
+  {
+    id: "lisboa-pensamento",
+    name: "Apartamento Pensamento 4 - 4ª Andar",
+    city: "Lisboa",
+    address: "Calçada do Desterro 7, Lisboa, Portugal",
+    checkIn: "2026-09-11",
+    checkOut: "2026-09-12",
+    hours: "Entrada 15:00–00:00 · salida 10:00–11:00",
+    note: "Acordar salida de madrugada para el vuelo a París.",
+  },
+  {
+    id: "paris",
+    name: "ibis budget Paris Porte de Vincennes",
+    city: "París",
+    address: "2 avenue Léon Gaumont, 75020 Paris, France",
+    checkIn: "2026-09-12",
+    checkOut: "2026-09-15",
+    hours: "Entrada desde 14:00 · salida hasta 12:00",
+    note: "Confirmar custodia de equipaje antes de ir a Versalles y preparar el traslado temprano a Orly el día 15.",
+  },
+  {
+    id: "venecia",
+    name: "B&B Exclusive",
+    city: "Venecia",
+    address: "Calle de la Fondaria, San Polo 3080, Venezia, Italia",
+    checkIn: "2026-09-15",
+    checkOut: "2026-09-16",
+    hours: "Entrada 14:00–19:00 · salida 08:00–10:00",
+    note: "Confirmar equipaje anticipado y salida hacia las 06:45–07:00. Baño compartido y sin ascensor; aclarar con el alojamiento la habitación para tres adultos.",
+  },
+  {
+    id: "roma",
+    name: "Le Vie del Vaticano Guest House",
+    city: "Roma",
+    address: "Via Luigi Rizzo 83, Roma, Italia",
+    checkIn: "2026-09-16",
+    checkOut: "2026-09-18",
+    hours: "Entrada 15:00–22:00 · salida 09:00–11:00",
+    note: "Guardar equipaje antes del check-in está solicitado, pero no confirmado. Metro cercano: Cipro.",
+  },
+]
+export function hotelMapUrl(hotel: Hotel) {
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${hotel.name}, ${hotel.address}`)}`
+}

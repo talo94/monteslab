@@ -19,7 +19,8 @@ npm run format        # format files
 npm run format:check  # verify formatting without writing
 npm run lint          # run ESLint
 npm run typecheck     # run TypeScript checks
-npm run check         # run all non-building checks
+npm run test          # run Vitest content integrity tests
+npm run check         # run format, lint, type checks, and tests
 npm run build         # run checks and create the production build
 npm run build:vercel  # type-check and compile for Vercel deployment
 ```
@@ -39,6 +40,6 @@ Features move through four versioned artifacts before the pull request:
 
 Each stage is reviewed before the next one begins. Small corrections and maintenance may skip RFC, pre-work, and plan when they introduce no product or architectural decision, but they still update relevant documentation.
 
-Work in a focused branch and open a pull request into `main`. GitHub Actions validates formatting, lint, types, and the production build. Configure Vercel to use `main` as the production branch and enable its GitHub integration so pull requests receive preview deployments.
+Work in a focused branch and open a pull request into `main`. GitHub Actions validates formatting, lint, types, tests, and the production build. Configure Vercel to use `main` as the production branch and enable its GitHub integration so pull requests receive preview deployments.
 
 Repository content may include personal material. Review dates, addresses, names, documents, and operational details before committing or publishing them.
