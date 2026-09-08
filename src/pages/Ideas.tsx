@@ -5,7 +5,9 @@ export default function Ideas() {
   return (
     <main className="mx-auto min-h-[calc(100vh-80px)] max-w-3xl px-6 py-10">
       <h1 className="text-3xl font-semibold text-stone-900">Ideas</h1>
-      <p className="mt-2 text-stone-600">Borradores, guiones y cosas en proceso.</p>
+      <p className="mt-2 text-stone-600">
+        Borradores, guiones y cosas en proceso.
+      </p>
 
       <ul className="mt-8 flex flex-col gap-4">
         <li>

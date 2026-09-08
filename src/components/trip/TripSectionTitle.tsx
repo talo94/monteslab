@@ -1,10 +1,14 @@
 type TripSectionTitleProps = {
-  id?: string;
-  children: string;
-  className?: string;
-};
+  id?: string
+  children: string
+  className?: string
+}
 
-export function TripSectionTitle({ id, children, className = "" }: TripSectionTitleProps) {
+export function TripSectionTitle({
+  id,
+  children,
+  className = "",
+}: TripSectionTitleProps) {
   return (
     <h3
       id={id}
@@ -15,5 +19,5 @@ export function TripSectionTitle({ id, children, className = "" }: TripSectionTi
     >
       {children}
     </h3>
-  );
+  )
 }

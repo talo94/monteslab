@@ -1,0 +1,4 @@
+interface:
+  display_name: "Montes Lab Plan Implementer"
+  short_description: "Implement approved tasks with tests and docs"
+  default_prompt: "Use $implement-plan to implement this approved plan with tests and documentation."

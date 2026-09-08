@@ -1,0 +1,4 @@
+interface:
+  display_name: "Montes Lab Pull Request"
+  short_description: "Validate, document, and prepare pull requests"
+  default_prompt: "Use $prepare-pr to validate this branch and prepare its pull request."

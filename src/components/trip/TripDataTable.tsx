@@ -1,15 +1,15 @@
-import type { TableRow } from "./types";
+import type { TableRow } from "./types"
 
 const cols = [
   { key: "time" as const, label: "Hora" },
   { key: "plan" as const, label: "Plan" },
   { key: "entry" as const, label: "Entrada" },
   { key: "notes" as const, label: "Notas" },
-] as const;
+] as const
 
 type TripDataTableProps = {
-  rows: TableRow[];
-};
+  rows: TableRow[]
+}
 
 export function TripDataTable({ rows }: TripDataTableProps) {
   return (
@@ -44,5 +44,5 @@ export function TripDataTable({ rows }: TripDataTableProps) {
         </tbody>
       </table>
     </div>
-  );
+  )
 }

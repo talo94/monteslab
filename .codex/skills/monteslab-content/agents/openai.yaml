@@ -1,0 +1,4 @@
+interface:
+  display_name: "Montes Lab Content"
+  short_description: "Publish structured personal content safely"
+  default_prompt: "Use $monteslab-content to add a new public page to Montes Lab."

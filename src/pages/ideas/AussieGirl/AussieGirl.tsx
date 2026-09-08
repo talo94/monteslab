@@ -11,11 +11,26 @@ export default function AussieGirl() {
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(255,182,213,0.45),transparent_55%),radial-gradient(ellipse_at_bottom_right,rgba(196,181,253,0.4),transparent_50%),radial-gradient(ellipse_at_center,rgba(255,228,240,0.6),transparent_70%)]"
       />
 
-      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
-        <Sparkle className="left-[8%] top-[12%] text-2xl opacity-70" delay="0s" />
-        <Sparkle className="right-[12%] top-[18%] text-xl opacity-60" delay="1.2s" />
-        <Sparkle className="left-[15%] bottom-[20%] text-lg opacity-50" delay="2.4s" />
-        <Sparkle className="right-[8%] bottom-[28%] text-2xl opacity-65" delay="0.8s" />
+      <div
+        className="pointer-events-none absolute inset-0 overflow-hidden"
+        aria-hidden
+      >
+        <Sparkle
+          className="left-[8%] top-[12%] text-2xl opacity-70"
+          delay="0s"
+        />
+        <Sparkle
+          className="right-[12%] top-[18%] text-xl opacity-60"
+          delay="1.2s"
+        />
+        <Sparkle
+          className="left-[15%] bottom-[20%] text-lg opacity-50"
+          delay="2.4s"
+        />
+        <Sparkle
+          className="right-[8%] bottom-[28%] text-2xl opacity-65"
+          delay="0.8s"
+        />
         <Heart className="left-[6%] top-[42%] opacity-40" />
         <Heart className="right-[6%] top-[55%] opacity-35" />
       </div>
@@ -104,7 +119,9 @@ export default function AussieGirl() {
         </ol>
 
         <footer className="mt-12 text-center">
-          <p className="aussie-script text-2xl text-[#c4457a]">💜 Aussie x Nómada 💜</p>
+          <p className="aussie-script text-2xl text-[#c4457a]">
+            💜 Aussie x Nómada 💜
+          </p>
           <p className="mt-2 text-sm text-[#b5658a]">¡A grabar se ha dicho!</p>
         </footer>
       </div>
@@ -112,13 +129,7 @@ export default function AussieGirl() {
   )
 }
 
-function Sparkle({
-  className,
-  delay,
-}: {
-  className?: string
-  delay: string
-}) {
+function Sparkle({ className, delay }: { className?: string; delay: string }) {
   return (
     <span
       className={`absolute animate-bounce text-[#e8a0c0] ${className ?? ""}`}
@@ -132,7 +143,10 @@ function Sparkle({
 
 function Heart({ className }: { className?: string }) {
   return (
-    <span className={`absolute text-xl text-[#f0a8c8] ${className ?? ""}`} aria-hidden>
+    <span
+      className={`absolute text-xl text-[#f0a8c8] ${className ?? ""}`}
+      aria-hidden
+    >
       ♡
     </span>
   )

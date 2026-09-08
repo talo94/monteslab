@@ -1,0 +1,4 @@
+interface:
+  display_name: "Montes Lab Feature RFC"
+  short_description: "Clarify features and write product RFCs"
+  default_prompt: "Use $feature-rfc to clarify this feature idea and create an RFC."

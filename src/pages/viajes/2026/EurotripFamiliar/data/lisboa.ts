@@ -1,5 +1,5 @@
-import type { CityTab } from "@/components/trip";
-import { d, r } from "./helpers";
+import type { CityTab } from "@/components/trip"
+import { d, r } from "./helpers"
 
 export const lisboaCity: CityTab = {
   id: "lisboa",
@@ -23,31 +23,66 @@ export const lisboaCity: CityTab = {
       "28 abril · llegada a Lisboa",
       [
         r("22:20", "Llegada a Lisboa", "€0", "Ir directo al hostel."),
-        r("23:15–00:00", "Traslado al Goodnight Hostel", "€10–15", "Uber/Bolt es lo más cómodo a esa hora."),
+        r(
+          "23:15–00:00",
+          "Traslado al Goodnight Hostel",
+          "€10–15",
+          "Uber/Bolt es lo más cómodo a esa hora."
+        ),
       ],
-      "Subtotal del día: €10–15",
+      "Subtotal del día: €10–15"
     ),
     d(
       "l29",
       "29 abril · Lisboa → Fátima",
       [
         r("08:00", "Desayuno", "€0", "Salida tranquila."),
-        r("09:00–11:00", "Bus a Fátima", "€5–15", "Rede Expressos/FlixBus según horario."),
-        r("12:00", "Check-in / almuerzo", "€0", "Después, primer contacto con el santuario."),
-        r("Tarde", "Capilla de las Apariciones + basílicas", "€0", "Paseo espiritual y ubicación."),
-        r("Noche", "Procesión de velas", "€0", "Si os apetece, es una experiencia preciosa."),
+        r(
+          "09:00–11:00",
+          "Bus a Fátima",
+          "€5–15",
+          "Rede Expressos/FlixBus según horario."
+        ),
+        r(
+          "12:00",
+          "Check-in / almuerzo",
+          "€0",
+          "Después, primer contacto con el santuario."
+        ),
+        r(
+          "Tarde",
+          "Capilla de las Apariciones + basílicas",
+          "€0",
+          "Paseo espiritual y ubicación."
+        ),
+        r(
+          "Noche",
+          "Procesión de velas",
+          "€0",
+          "Si os apetece, es una experiencia preciosa."
+        ),
       ],
-      "Subtotal del día: €5–15",
+      "Subtotal del día: €5–15"
     ),
     d(
       "l30",
       "30 abril · Fátima completo",
       [
-        r("Mañana", "Misa + Santuario", "€0", "Día con intención espiritual, sin prisa."),
-        r("Mediodía", "Recorrido del recinto", "€0", "Basilica of the Rosary, Basilica of the Holy Trinity, plaza."),
+        r(
+          "Mañana",
+          "Misa + Santuario",
+          "€0",
+          "Día con intención espiritual, sin prisa."
+        ),
+        r(
+          "Mediodía",
+          "Recorrido del recinto",
+          "€0",
+          "Basilica of the Rosary, Basilica of the Holy Trinity, plaza."
+        ),
         r("Noche", "Procesión opcional", "€0", "Dejar margen para descansar."),
       ],
-      "Subtotal del día: €0",
+      "Subtotal del día: €0"
     ),
     d(
       "l1",
@@ -55,17 +90,39 @@ export const lisboaCity: CityTab = {
       [
         r("09:00–11:00", "Bus a Lisboa", "€5–15", "Elegir uno no muy tarde."),
         r("12:00", "Dejar maletas", "€0", "Check-in o guarda equipaje."),
-        r("14:30–16:30", "Opción A · free tour corto", "€0–15 propina opcional", "Baixa/Chiado/Alfama."),
-        r("14:30–19:00", "Opción B · paseo libre", "€0", "Baixa, Sé, miradores, Alfama y cena temprana."),
-        r("22:00", "Dormir temprano", "€0", "Vuelo muy madrugador al día siguiente."),
+        r(
+          "14:30–16:30",
+          "Opción A · free tour corto",
+          "€0–15 propina opcional",
+          "Baixa/Chiado/Alfama."
+        ),
+        r(
+          "14:30–19:00",
+          "Opción B · paseo libre",
+          "€0",
+          "Baixa, Sé, miradores, Alfama y cena temprana."
+        ),
+        r(
+          "22:00",
+          "Dormir temprano",
+          "€0",
+          "Vuelo muy madrugador al día siguiente."
+        ),
       ],
-      "Subtotal del día: €5–30",
+      "Subtotal del día: €5–30"
     ),
     d(
       "l2",
       "2 mayo · vuelo a París",
-      [r("03:00–03:30", "Salida al aeropuerto", "€10–15", "Uber/Bolt recomendado.")],
-      "Subtotal del día: €10–15",
+      [
+        r(
+          "03:00–03:30",
+          "Salida al aeropuerto",
+          "€10–15",
+          "Uber/Bolt recomendado."
+        ),
+      ],
+      "Subtotal del día: €10–15"
     ),
   ],
   checklist: [
@@ -104,4 +161,4 @@ export const lisboaCity: CityTab = {
     callout:
       "En la versión final puedes pegar aquí una ruta de My Maps con dos capas: Lisboa y Fátima. Si quieres usar free tour, añade el punto de encuentro oficial cuando lo elijas para que quede integrado.",
   },
-};
+}

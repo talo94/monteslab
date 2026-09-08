@@ -38,9 +38,7 @@ export const scriptSections: ScriptSection[] = [
   {
     id: "transformation",
     label: "La transformación",
-    lines: [
-      "Pasé de tardar casi una hora desenredándome a solo unos minutos.",
-    ],
+    lines: ["Pasé de tardar casi una hora desenredándome a solo unos minutos."],
   },
   {
     id: "travel",
