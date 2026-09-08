@@ -22,7 +22,9 @@ Montes Lab is a personal, public publishing space for ideas, trips, music, and p
 
 ## Quality and delivery
 
-`npm run check` is the shared local and CI quality gate: Prettier, ESLint, and TypeScript. `npm run build` runs that gate before the Vite production build. A versioned pre-commit hook invokes the same checks. GitHub Actions validates pull requests and `main`. Vercel uses `npm run build:vercel`, explicitly configured via `buildCommand` in `vercel.json`, to run TypeScript and Vite without repeating formatting and lint on deployment artifacts. Require the GitHub `quality-and-build` check before merging; this repository configuration does not itself enforce branch protection or make Vercel wait for GitHub CI.
+`npm run check` is the shared local and CI quality gate: Prettier, ESLint, TypeScript, and Vitest. `npm run build` runs that gate before the Vite production build. A versioned pre-commit hook invokes the same checks. GitHub Actions validates pull requests and `main`. Vercel uses `npm run build:vercel`, explicitly configured via `buildCommand` in `vercel.json`, to run TypeScript and Vite without repeating formatting and lint on deployment artifacts. Require the GitHub `quality-and-build` check before merging; this repository configuration does not itself enforce branch protection or make Vercel wait for GitHub CI.
+
+The Fernández Bedoya guide lives at `/viajes/2026/eurotrip-fernandez-bedoya`, linked alongside the earlier guide from `/viajes`. It uses independent typed data under `src/pages/viajes/2026/EurotripFernandezBedoya/data/`, native anchors, and the shared trip layout/tokens. Transport summaries and day references share one data source; hotel maps use public Google Maps search links. No booking documents or private access details are shipped. Run `npm run test` for content integrity tests; these also run in `check` and CI.
 
 Generated Vercel artifacts under `.vercel/` are excluded from Git, Prettier, and ESLint. The versioned `vercel.json` remains subject to formatting checks.
 
