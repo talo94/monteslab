@@ -1,5 +1,6 @@
 export const routes = {
   home: "/",
+  homeEn: "/en",
   proyectos: "/proyectos",
   viajes: "/viajes",
   ideas: "/ideas",
