@@ -23,13 +23,16 @@ const HIDE_NAV_PATHS: readonly string[] = [
 
 function AppRoutes() {
   const { pathname } = useLocation()
-  const showNavbar = !HIDE_NAV_PATHS.includes(pathname)
+  const isCommercialHome =
+    pathname === routes.home || pathname === routes.homeEn
+  const showNavbar = !isCommercialHome && !HIDE_NAV_PATHS.includes(pathname)
 
   return (
     <>
       {showNavbar && <Navbar />}
       <Routes>
         <Route path={routes.home} element={<Home />} />
+        <Route path={routes.homeEn} element={<Home />} />
         <Route path={routes.proyectos} element={<Proyectos />} />
         <Route path={routes.viajes} element={<Viajes />} />
         <Route path={routes.ideas} element={<Ideas />} />
