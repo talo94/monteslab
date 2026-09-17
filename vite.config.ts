@@ -8,6 +8,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
+        plantas: path.resolve(__dirname, "plantas/index.html"),
         main: path.resolve(__dirname, "index.html"),
         en: path.resolve(__dirname, "en/index.html"),
       },

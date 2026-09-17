@@ -1,0 +1,395 @@
+.plants-page {
+  background: var(--color-ml-bg);
+  color: var(--color-ml-ink);
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.plants-page * {
+  box-sizing: border-box;
+}
+.plants-page p {
+  font-weight: 400;
+}
+.plants-page a {
+  color: inherit;
+}
+.plants-page a:focus-visible {
+  outline: 3px solid var(--color-ml-green);
+  outline-offset: 5px;
+}
+.plants-page main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 40px 80px;
+}
+.plants-page main:focus {
+  outline: none;
+}
+.plants-topbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 28px 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  border-bottom: 1px solid var(--color-ml-line);
+}
+.plants-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-family: "Inria Serif", Georgia, serif;
+  font-size: 23px;
+}
+.plants-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  text-underline-offset: 5px;
+}
+.plants-heading {
+  padding: 54px 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+.plants-eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  color: var(--color-ml-green);
+  margin: 0 0 14px;
+  font-weight: 600 !important;
+}
+.plants-page h1 {
+  font:
+    400 clamp(42px, 5.4vw, 66px)/1.1 "Inria Serif",
+    Georgia,
+    serif;
+  margin: 0 0 18px;
+  letter-spacing: -0.025em;
+}
+.plants-page h1 em {
+  color: var(--color-ml-green);
+  font-weight: 400;
+}
+.plants-intro {
+  color: var(--color-ml-muted);
+  margin: 0;
+}
+.plants-count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 1px solid var(--color-ml-line);
+  padding: 0 36px;
+  min-width: 150px;
+  color: var(--color-ml-muted);
+  font-size: 14px;
+}
+.plants-count strong {
+  font:
+    400 54px/1.2 "Inria Serif",
+    Georgia,
+    serif;
+  color: var(--color-ml-green);
+}
+.plants-catalog-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 0;
+  border-top: 1px solid var(--color-ml-line);
+  font-size: 13px;
+  color: var(--color-ml-muted);
+}
+.plants-catalog-label span:first-child {
+  letter-spacing: 0.12em;
+}
+.plants-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 38px 28px;
+}
+.plant-card {
+  display: block;
+  text-decoration: none;
+}
+.plant-card-art {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-ml-card);
+  border: 1px solid var(--color-trip-line-soft);
+}
+.plant-illustration {
+  width: 100%;
+  aspect-ratio: 1;
+  background-size: 400% 300%;
+  background-repeat: no-repeat;
+}
+.plant-number {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  font-size: 13px;
+  color: var(--color-ml-muted);
+  background: var(--color-ml-bg);
+  padding: 0 6px;
+}
+.plant-card-info {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 0 4px;
+  border-bottom: 1px solid var(--color-ml-line);
+  min-height: 104px;
+}
+.plant-card h2 {
+  font:
+    400 29px/1.2 "Inria Serif",
+    Georgia,
+    serif;
+  margin: 0 0 5px;
+}
+.plant-card p {
+  font-size: 14px;
+  color: var(--color-ml-muted);
+  margin: 0 0 12px;
+}
+.plant-card-info svg {
+  flex-shrink: 0;
+  color: var(--color-ml-green);
+}
+.plant-card:hover h2 {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.plants-footer {
+  max-width: 1120px;
+  margin: auto;
+  padding: 25px 0;
+  border-top: 1px solid var(--color-ml-line);
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  color: var(--color-ml-muted);
+  font-size: 13px;
+}
+.plants-skip {
+  position: absolute;
+  left: 20px;
+  top: -100px;
+  z-index: 20;
+  padding: 12px;
+  background: var(--color-ml-bg);
+}
+.plants-skip:focus {
+  top: 10px;
+}
+.plant-detail-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 64px;
+  align-items: center;
+  padding: 45px 0 55px;
+}
+.plant-detail-art {
+  text-align: center;
+  color: var(--color-ml-muted);
+  font-size: 12px;
+}
+.plant-detail-art .plant-illustration {
+  border: 1px solid var(--color-trip-line-soft);
+  margin-bottom: 8px;
+}
+.plant-identity > p {
+  margin-bottom: 18px;
+}
+.plant-botanical {
+  font:
+    400 24px/1.4 "Inria Serif",
+    Georgia,
+    serif;
+  color: var(--color-ml-green);
+}
+.plant-source-note {
+  display: flex;
+  gap: 12px;
+  padding-top: 20px;
+  border-top: 1px solid var(--color-ml-line);
+  color: var(--color-ml-muted);
+  font-size: 14px;
+}
+.plant-source-note svg {
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+.plant-source-note p {
+  margin: 0;
+}
+.plant-reading-layout {
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr);
+  gap: 60px;
+  border-top: 1px solid var(--color-ml-line);
+  padding-top: 40px;
+}
+.plant-index {
+  align-self: start;
+  position: sticky;
+  top: 25px;
+}
+.plant-index a {
+  display: block;
+  font-size: 14px;
+  padding: 8px 0;
+  text-decoration: none;
+  color: var(--color-ml-muted);
+}
+.plant-index a:hover {
+  text-decoration: underline;
+}
+.plant-section {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 18px;
+  margin-bottom: 42px;
+  scroll-margin-top: 25px;
+}
+.plant-section-number {
+  font-size: 12px;
+  color: var(--color-ml-muted);
+  padding-top: 8px;
+}
+.plants-page h2 {
+  font-family: "Inria Serif", Georgia, serif;
+  font-weight: 400;
+}
+.plant-section h2,
+.plant-sources h2 {
+  font-size: 29px;
+  line-height: 1.25;
+  margin: 0 0 18px;
+}
+.plant-section p {
+  margin: 0 0 16px;
+}
+.plant-pina {
+  background: var(--color-ml-card);
+  padding: 24px;
+}
+.plant-sources {
+  padding: 25px 0;
+  border-top: 1px solid var(--color-ml-line);
+  margin-bottom: 25px;
+  scroll-margin-top: 25px;
+}
+.plant-sources ul {
+  padding-left: 20px;
+}
+.plant-sources a {
+  font-size: 14px;
+  overflow-wrap: anywhere;
+  text-underline-offset: 4px;
+}
+.plants-text-link {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  text-underline-offset: 5px;
+}
+@media (max-width: 850px) {
+  .plants-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .plant-detail-hero {
+    gap: 30px;
+  }
+  .plant-reading-layout {
+    grid-template-columns: 180px minmax(0, 1fr);
+    gap: 30px;
+  }
+  .plants-footer {
+    margin: 0 40px;
+  }
+}
+@media (max-width: 600px) {
+  .plants-topbar {
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  .plants-brand {
+    font-size: 21px;
+  }
+  .plants-back {
+    font-size: 13px;
+  }
+  .plants-page main {
+    padding: 0 20px 50px;
+  }
+  .plants-heading {
+    padding: 35px 0 25px;
+  }
+  .plants-count {
+    min-width: 0;
+    padding: 0 0 0 15px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .plants-count strong {
+    font-size: 38px;
+  }
+  .plants-grid {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+  .plants-catalog-label {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .plants-footer {
+    margin: 0 20px;
+    flex-direction: column;
+  }
+  .plant-detail-hero {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 25px 0 35px;
+  }
+  .plant-detail-art {
+    max-width: 360px;
+    width: 100%;
+    margin: auto;
+  }
+  .plant-reading-layout {
+    display: block;
+    padding-top: 24px;
+  }
+  .plant-index {
+    position: static;
+    margin-bottom: 35px;
+    border-bottom: 1px solid var(--color-ml-line);
+    padding-bottom: 20px;
+  }
+  .plant-section {
+    gap: 10px;
+    grid-template-columns: 22px minmax(0, 1fr);
+  }
+  .plant-pina {
+    padding: 18px 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

@@ -2,6 +2,14 @@
   "buildCommand": "npm run build:vercel",
   "rewrites": [
     {
+      "source": "/plantas",
+      "destination": "/plantas/index.html"
+    },
+    {
+      "source": "/plantas/:path*",
+      "destination": "/plantas/index.html"
+    },
+    {
       "source": "/en",
       "destination": "/en/index.html"
     },
@@ -12,6 +20,26 @@
     {
       "source": "/(.*)",
       "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/plantas",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/plantas/:path*",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
     }
   ]
 }

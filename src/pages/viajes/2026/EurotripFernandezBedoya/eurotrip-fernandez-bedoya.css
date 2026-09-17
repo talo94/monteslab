@@ -1,5 +1,5 @@
 .fb-guide {
-  --fb-accent: #3e5548;
+  --fb-accent: var(--color-ml-green);
   --fb-surface: var(--color-trip-paper);
   --fb-border: var(--color-ml-line);
   font-size: 15px;
