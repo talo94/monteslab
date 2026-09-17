@@ -3,6 +3,7 @@
  * Sin sombras ni degradados en el fondo global; separación con bordes solo top/bottom donde aplique.
  */
 @theme {
+  --color-ml-green: #3e5548;
   /* Surfaces & text (monteslab / giras) */
   --color-ml-bg: #fbf7ef;
   --color-ml-ink: #382e22;

@@ -39,3 +39,9 @@ Generated Vercel artifacts under `.vercel/` are excluded from Git, Prettier, and
 ## Privacy boundary
 
 The site is public by default and has no authentication layer. Credentials, booking codes, identity or financial numbers, private contact information, and exact live locations must not enter published content. Names, future travel details, lodging addresses, unpublished lyrics, and internal production information require an explicit publishing decision.
+
+## Personal plant catalogue
+
+The static catalogue lives at `/plantas`, with eleven detail pages at `/plantas/:slug`. It is absent from the home, public navigation and sitemap. Routes lazy-load typed content under `src/pages/plantas/`. `plantas/index.html` is a dedicated Vite entry; Vercel rewrites plant routes to it and adds `X-Robots-Tag: noindex, nofollow`. The entry and client layout also set meta robots. These measures discourage indexing; they do not provide private access.
+
+Care text and sources come from the supplied document. The user confirmed 13 September 2026 as the document reference date. Relative dates are anchored to that date; approximate intervals remain approximate. The DOCX is not shipped. Each record has `imageSource` and optional `imageIndex` for the provisional botanical atlas. To replace one illustration, store the photo locally, update `imageSource`, remove `imageIndex`, and adapt the provisional-image label. The atlas downloads once. The layout uses shared tokens, Inria Serif and `--color-ml-green`; the existing travel accent references that same green without changing its value. Navigation to the home reloads its HTML to restore its metadata. Unknown slugs offer a link back to the catalogue.
